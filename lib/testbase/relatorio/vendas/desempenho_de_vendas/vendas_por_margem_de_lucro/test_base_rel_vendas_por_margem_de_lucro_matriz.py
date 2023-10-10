@@ -27,7 +27,7 @@ from lib.python.python_doc import esperar_tempo
 
 
 @mark.emitir_rel_vendas_margem_lucro_matriz
-def test_base_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_matriz_todas_empresas():
+def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_matriz_todas_empresas():
     "Filtro todas as margens de lucro com impressão analitico"
     login_sistema()
     digitar_codigo_relatorio(COD_5)
@@ -46,7 +46,7 @@ def test_base_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_matriz_to
 
 
 @mark.emitir_rel_vendas_margem_lucro_matriz
-def test_base_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_matriz_todas_empresas():
+def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_matriz_todas_empresas():
     "Filtro todas as margens de lucro com impressão sintético"
     login_sistema()
     digitar_codigo_relatorio(COD_5)
@@ -65,7 +65,7 @@ def test_base_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_matriz_to
 
 
 @mark.emitir_rel_vendas_margem_lucro_matriz
-def test_base_vendas_por_margem_lucro_seleciona_margem_analitico_matriz_todas_empresas():
+def test_rel_vendas_por_margem_lucro_seleciona_margem_analitico_matriz_todas_empresas():
     "Filtro magrem de lucro específica com impressão analitico"
     login_sistema()
     digitar_codigo_relatorio(COD_5)
@@ -86,7 +86,7 @@ def test_base_vendas_por_margem_lucro_seleciona_margem_analitico_matriz_todas_em
 
 
 @mark.emitir_rel_vendas_margem_lucro_matriz
-def test_base_vendas_por_margem_lucro_seleciona_margem_sintetico_matriz_todas_empresas():
+def test_rel_vendas_por_margem_lucro_seleciona_margem_sintetico_matriz_todas_empresas():
     "Filtro magrem de lucro específica com impressão sintético"
     login_sistema()
     digitar_codigo_relatorio(COD_5)

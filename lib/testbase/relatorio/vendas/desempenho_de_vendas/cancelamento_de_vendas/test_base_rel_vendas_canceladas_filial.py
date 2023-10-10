@@ -24,7 +24,7 @@ from lib.formulario.vendas.desempenho_de_vendas.vendas_canceladas.f_rel_vendas_c
 
 
 @mark.emitir_rel_vendas_canceladas_filial
-def test_base_vendas_canceladas_analitico_cancelamento_filial():
+def test_rel_vendas_canceladas_analitico_cancelamento_filial():
     "Filtro analitico por periodo de cancelamento"
     login_sistema()
     digitar_codigo_relatorio(COD_8)
@@ -40,7 +40,7 @@ def test_base_vendas_canceladas_analitico_cancelamento_filial():
 
 
 @mark.emitir_rel_vendas_canceladas_filial
-def test_base_vendas_canceladas_analitico_vendas_filial():
+def test_rel_vendas_canceladas_analitico_vendas_filial():
     "Filtro analitico por periodo de vendas"
     login_sistema()
     digitar_codigo_relatorio(COD_8)
@@ -56,7 +56,7 @@ def test_base_vendas_canceladas_analitico_vendas_filial():
 
 
 @mark.emitir_rel_vendas_canceladas_filial
-def test_base_vendas_canceladas_sintetico_cancelamento_filial():
+def test_rel_vendas_canceladas_sintetico_cancelamento_filial():
     "Filtro sintetico por periodo de cancelamento"
     login_sistema()
     digitar_codigo_relatorio(COD_8)
@@ -72,7 +72,7 @@ def test_base_vendas_canceladas_sintetico_cancelamento_filial():
 
 
 @mark.emitir_rel_vendas_canceladas_filial
-def test_base_vendas_canceladas_sintetico_venda_filial():
+def test_rel_vendas_canceladas_sintetico_venda_filial():
     "Filtro sintetico por periodo de vendas"
     login_sistema()
     digitar_codigo_relatorio(COD_8)

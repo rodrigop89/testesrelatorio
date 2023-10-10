@@ -19,7 +19,7 @@ from lib.python.python_doc import esperar_tempo
 
 
 @mark.emitir_rel_evolucao_filial
-def test_relatorio_evolucao_vendas_filial():
+def test_rel_evolucao_vendas_filial():
     "Teste sistema filial"
     login_sistema()
     digitar_codigo_relatorio(COD_1)

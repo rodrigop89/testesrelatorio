@@ -40,7 +40,7 @@ from lib.python.python_doc import esperar_tempo
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_fabricante
-def test_base_custo_medio_filtro_fabricante_preco_custo_medio_mono():
+def test_rel_custo_medio_filtro_fabricante_preco_custo_medio_mono():
     "Filtro fabricante e preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -65,7 +65,7 @@ def test_base_custo_medio_filtro_fabricante_preco_custo_medio_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_fabricante
-def test_base_custo_medio_filtro_fabricante_preco_fabrica_mono():
+def test_rel_custo_medio_filtro_fabricante_preco_fabrica_mono():
     "Filtro fabricante e preço de fábrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -90,7 +90,7 @@ def test_base_custo_medio_filtro_fabricante_preco_fabrica_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_fabricante
-def test_base_custo_medio_filtro_fabricante_preco_custo_mono():
+def test_rel_custo_medio_filtro_fabricante_preco_custo_mono():
     "Filtro fabricante e preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -115,7 +115,7 @@ def test_base_custo_medio_filtro_fabricante_preco_custo_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_fabricante
-def test_base_custo_medio_filtro_fabricante_preco_bruto_compra_mono():
+def test_rel_custo_medio_filtro_fabricante_preco_bruto_compra_mono():
     "Filtro fabricante e preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -140,7 +140,7 @@ def test_base_custo_medio_filtro_fabricante_preco_bruto_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_fabricante
-def test_base_custo_medio_filtro_fabricante_preco_liquido_compra_mono():
+def test_rel_custo_medio_filtro_fabricante_preco_liquido_compra_mono():
     "Filtro fabricante e preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -165,7 +165,7 @@ def test_base_custo_medio_filtro_fabricante_preco_liquido_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_fabricante
-def test_base_custo_medio_filtro_fabricante_nao_incluir_produtos_sem_compra_mono():
+def test_rel_custo_medio_filtro_fabricante_nao_incluir_produtos_sem_compra_mono():
     "Filtro fabricante e não incluir produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -192,7 +192,7 @@ def test_base_custo_medio_filtro_fabricante_nao_incluir_produtos_sem_compra_mono
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_linha
-def test_base_custo_medio_filtro_linha_preco_custo_medio_mono():
+def test_rel_custo_medio_filtro_linha_preco_custo_medio_mono():
     "Filtro linha e por preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -217,7 +217,7 @@ def test_base_custo_medio_filtro_linha_preco_custo_medio_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_linha
-def test_base_custo_medio_filtro_linha_preco_fabrica_mono():
+def test_rel_custo_medio_filtro_linha_preco_fabrica_mono():
     "Filtro linha e por preço de fábrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -242,7 +242,7 @@ def test_base_custo_medio_filtro_linha_preco_fabrica_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_linha
-def test_base_custo_medio_filtro_linha_preco_custo_mono():
+def test_rel_custo_medio_filtro_linha_preco_custo_mono():
     "Filtro linha e por preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -267,7 +267,7 @@ def test_base_custo_medio_filtro_linha_preco_custo_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_linha
-def test_base_custo_medio_filtro_linha_preco_bruto_compra_mono():
+def test_rel_custo_medio_filtro_linha_preco_bruto_compra_mono():
     "Filtro linha e por preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -292,7 +292,7 @@ def test_base_custo_medio_filtro_linha_preco_bruto_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_linha
-def test_base_custo_medio_filtro_linha_preco_liquido_compra_mono():
+def test_rel_custo_medio_filtro_linha_preco_liquido_compra_mono():
     "Filtro linha e por preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -318,7 +318,7 @@ def test_base_custo_medio_filtro_linha_preco_liquido_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_linha
-def test_base_custo_medio_filtro_linha_nao_incluir_produtos_sem_compra_mono():
+def test_rel_custo_medio_filtro_linha_nao_incluir_produtos_sem_compra_mono():
     "Filtro linhae não incluir produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -346,7 +346,7 @@ def test_base_custo_medio_filtro_linha_nao_incluir_produtos_sem_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_secao
-def test_base_custo_medio_filtro_secao_preco_custo_medio_mono():
+def test_rel_custo_medio_filtro_secao_preco_custo_medio_mono():
     "Filtro seção e preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -371,7 +371,7 @@ def test_base_custo_medio_filtro_secao_preco_custo_medio_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_secao
-def test_base_custo_medio_filtro_secao_preco_fabrica_mono():
+def test_rel_custo_medio_filtro_secao_preco_fabrica_mono():
     "Filtro seção e preço de fábrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -397,7 +397,7 @@ def test_base_custo_medio_filtro_secao_preco_fabrica_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_secao
-def test_base_custo_medio_filtro_secao_preco_custo_mono():
+def test_rel_custo_medio_filtro_secao_preco_custo_mono():
     "Filtro seção e preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -422,7 +422,7 @@ def test_base_custo_medio_filtro_secao_preco_custo_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_secao
-def test_base_custo_medio_filtro_secao_preco_bruto_compra_mono():
+def test_rel_custo_medio_filtro_secao_preco_bruto_compra_mono():
     "Filtro seção e preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -447,7 +447,7 @@ def test_base_custo_medio_filtro_secao_preco_bruto_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_secao
-def test_base_custo_medio_filtro_secao_preco_liquido_compra_mono():
+def test_rel_custo_medio_filtro_secao_preco_liquido_compra_mono():
     "Filtro seção e preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -473,7 +473,7 @@ def test_base_custo_medio_filtro_secao_preco_liquido_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_secao
-def test_base_custo_medio_filtro_secao_nao_incluir_produtos_sem_compra_mono():
+def test_rel_custo_medio_filtro_secao_nao_incluir_produtos_sem_compra_mono():
     "Filtro seção e não incluir produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -501,7 +501,7 @@ def test_base_custo_medio_filtro_secao_nao_incluir_produtos_sem_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_lista_sngpc
-def test_base_custo_medio_filtro_lista_sngpc_preco_custo_medio_mono():
+def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_medio_mono():
     "Filtro lista sngpc e preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -526,7 +526,7 @@ def test_base_custo_medio_filtro_lista_sngpc_preco_custo_medio_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_lista_sngpc
-def test_base_custo_medio_filtro_lista_sngpc_preco_fabrica_mono():
+def test_rel_custo_medio_filtro_lista_sngpc_preco_fabrica_mono():
     "Filtro lista sngpc e preço de fábrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -552,7 +552,7 @@ def test_base_custo_medio_filtro_lista_sngpc_preco_fabrica_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_lista_sngpc
-def test_base_custo_medio_filtro_lista_sngpc_preco_custo_mono():
+def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_mono():
     "Filtro lista sngpc e preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -577,7 +577,7 @@ def test_base_custo_medio_filtro_lista_sngpc_preco_custo_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_lista_sngpc
-def test_base_custo_medio_filtro_lista_sngpc_preco_bruto_compra_mono():
+def test_rel_custo_medio_filtro_lista_sngpc_preco_bruto_compra_mono():
     "Filtro lista sngpc e preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -602,7 +602,7 @@ def test_base_custo_medio_filtro_lista_sngpc_preco_bruto_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_lista_sngpc
-def test_base_custo_medio_filtro_lista_sngpc_preco_liquido_compra_mono():
+def test_rel_custo_medio_filtro_lista_sngpc_preco_liquido_compra_mono():
     "Filtro lista sngpc e preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -628,7 +628,7 @@ def test_base_custo_medio_filtro_lista_sngpc_preco_liquido_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_lista_sngpc
-def test_base_custo_medio_filtro_lista_sngpc_nao_incluir_produtos_sem_compra_mono():
+def test_rel_custo_medio_filtro_lista_sngpc_nao_incluir_produtos_sem_compra_mono():
     "Filtro lista sngpc e não incluir produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -656,7 +656,7 @@ def test_base_custo_medio_filtro_lista_sngpc_nao_incluir_produtos_sem_compra_mon
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_principio_ativo
-def test_base_custo_medio_filtro_principio_ativo_preco_custo_medio_mono():
+def test_rel_custo_medio_filtro_principio_ativo_preco_custo_medio_mono():
     "Filtro principio ativo e preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -681,7 +681,7 @@ def test_base_custo_medio_filtro_principio_ativo_preco_custo_medio_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_principio_ativo
-def test_base_custo_medio_filtro_principio_ativo_preco_fabrica_mono():
+def test_rel_custo_medio_filtro_principio_ativo_preco_fabrica_mono():
     "Filtro principio ativo e preço de fábrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -707,7 +707,7 @@ def test_base_custo_medio_filtro_principio_ativo_preco_fabrica_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_principio_ativo
-def test_base_custo_medio_filtro_principio_ativo_preco_custo_mono():
+def test_rel_custo_medio_filtro_principio_ativo_preco_custo_mono():
     "Filtro principio ativo e preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -732,7 +732,7 @@ def test_base_custo_medio_filtro_principio_ativo_preco_custo_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_principio_ativo
-def test_base_custo_medio_filtro_principio_ativo_preco_bruto_compra_mono():
+def test_rel_custo_medio_filtro_principio_ativo_preco_bruto_compra_mono():
     "Filtro principio ativo e preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -757,7 +757,7 @@ def test_base_custo_medio_filtro_principio_ativo_preco_bruto_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_principio_ativo
-def test_base_custo_medio_filtro_principio_ativo_preco_liquido_compra_mono():
+def test_rel_custo_medio_filtro_principio_ativo_preco_liquido_compra_mono():
     "Filtro principio ativo e preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -783,7 +783,7 @@ def test_base_custo_medio_filtro_principio_ativo_preco_liquido_compra_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_principio_ativo
-def test_base_custo_medio_filtro_principio_ativo_nao_incluir_produtos_sem_compra_mono():
+def test_rel_custo_medio_filtro_principio_ativo_nao_incluir_produtos_sem_compra_mono():
     "Filtro princpio ativo e não incluir sem produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)

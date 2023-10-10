@@ -18,7 +18,7 @@ from lib.python.python_doc import esperar_tempo
 
 
 @mark.emitir_rel_evolucao_mono
-def test_relatorio_evolucao_vendas_mono():
+def test_rel_evolucao_vendas_mono():
     "Teste sistema mono"
     login_sistema()
     digitar_codigo_relatorio(COD_1)

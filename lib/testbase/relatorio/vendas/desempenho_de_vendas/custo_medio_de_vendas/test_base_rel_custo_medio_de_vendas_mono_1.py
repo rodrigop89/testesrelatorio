@@ -35,7 +35,7 @@ from lib.python.python_doc import esperar_tempo
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_todos_produtos
-def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo_medio_mono():
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo_medio_mono():
     "Filtro todos os produtos por preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -57,7 +57,7 @@ def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_cust
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_todos_produtos
-def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_fabrica_mono():
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_fabrica_mono():
     "Filtro todos os produtos por preço de fabrica / compra referencial"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -79,7 +79,7 @@ def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_fabr
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_todos_produtos
-def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo_mono():
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo_mono():
     "Filtro todos os produtos por preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -101,7 +101,7 @@ def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_cust
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_todos_produtos
-def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_bruto_compra_mono():
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_bruto_compra_mono():
     "Filtro todos os produtos por preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -123,7 +123,7 @@ def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_brut
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_todos_produtos
-def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_liquido_compra_mono():
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_liquido_compra_mono():
     "Filtro todos os produtos por preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -144,7 +144,7 @@ def test_base_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_liqu
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_todos_produtos
-def test_base_custo_medio_todos_produtos_nao_incluir_produtos_sem_compras_mono():
+def test_rel_custo_medio_todos_produtos_nao_incluir_produtos_sem_compras_mono():
     "Filtro todos os produtos sem incluir produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -167,7 +167,7 @@ def test_base_custo_medio_todos_produtos_nao_incluir_produtos_sem_compras_mono()
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_produto_especifico
-def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_custo_medio_mono():
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_custo_medio_mono():
     "Filtro produto especifico , incluir produtos sem compras e preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -190,7 +190,7 @@ def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_produto_especifico
-def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_fabrica_mono():
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_fabrica_mono():
     "Filtro produto especifico , incluir produtos sem compras e preço de fabrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -213,7 +213,7 @@ def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_produto_especifico
-def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_custo_mono():
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_custo_mono():
     "Filtro produto especifico , incluir produtos sem compras e preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -236,7 +236,7 @@ def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_produto_especifico
-def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_bruto_compra_mono():
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_bruto_compra_mono():
     "Filtro produto especifico , incluir produtos sem compras e preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -259,7 +259,7 @@ def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_produto_especifico
-def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_liquido_compra_mono():
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_liquido_compra_mono():
     "Filtro produto especifico , incluir produtos sem compras e preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -282,7 +282,7 @@ def test_base_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_produto_especifico
-def test_base_custo_medio_produto_especifico_nao_incluir_produtos_sem_compras_mono():
+def test_rel_custo_medio_produto_especifico_nao_incluir_produtos_sem_compras_mono():
     "Filtro produto especifico não incluir produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
