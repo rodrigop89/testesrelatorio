@@ -1,0 +1,7 @@
+1º cenário - Filtro: Todos produtos
+- Todos Produtos + incluir produtos que não possuem compras
+- Todos produtos + não incluir produtos que não possuem compras
+
+2º cenário - Filtro somente um produto
+- Produto + incluir produtos que não possuem compras + todos os preços
+- Produto + não incluir produtos que não possuem compras
