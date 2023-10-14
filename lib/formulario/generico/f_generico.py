@@ -214,11 +214,17 @@ def selecionar_grupo_produto():
 def selecionar_grupo_comissao():
     "Filtro por grupo de comissão"
     pyautogui.hotkey(ALT, O)
+    esperar_tempo(TEMPO_ESPERA)
+    pyautogui.press(SPACE)
+    pyautogui.press(ENTER)
 
 
 def selecionar_grupo_remarcacao():
     "Filtro por grupo de remarcação de preços"
     pyautogui.hotkey(ALT, R)
+    esperar_tempo(TEMPO_ESPERA)
+    pyautogui.press(SPACE)
+    pyautogui.press(ENTER)
 
 
 def selecionar_grupo_icms():
