@@ -230,6 +230,8 @@ def selecionar_grupo_remarcacao():
 def selecionar_grupo_icms():
     "Filtro por grupo de icms"
     pyautogui.hotkey(ALT, I)
+    pyautogui.press(SPACE)
+    pyautogui.press(ENTER)
 
 
 def selecionar_codigo_ncm():

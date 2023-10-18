@@ -15,6 +15,7 @@ from lib.formulario.generico.f_generico import (
     sair_relatorio,
     selecionar_categoria,
     selecionar_demais_filtros,
+    selecionar_grupo_icms,
     selecionar_grupo_produto,
     selecionar_grupo_remarcacao,
     selecionar_margem_lucro,
@@ -504,6 +505,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_custo_medio_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_custo_medio()
     selecionar_periodo()
     informar_periodo()
@@ -528,6 +530,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_fabrica_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_fabrica()
     selecionar_periodo()
     informar_periodo()
@@ -552,6 +555,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_custo_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_custo()
     selecionar_periodo()
     informar_periodo()
@@ -576,6 +580,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_bruto_compra_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_bruto_ultima_compra()
     selecionar_periodo()
     informar_periodo()
@@ -600,6 +605,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_liquido_compra_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_liquido_ultima_compra()
     selecionar_periodo()
     informar_periodo()
@@ -638,8 +644,9 @@ def test_rel_custo_medio_filtro_grupo_comissao_nao_incluir_produtos_sem_compra_m
 
 # GRUPO DE REMARCAÇÃO DE PREÇO
 
+
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_remarcacao
-def test_real_custo_medio_filtro_grupo_remarcacao_preco_custo_medio_mono():
+def test_rel_custo_medio_filtro_grupo_remarcacao_preco_custo_medio_mono():
     "Flitro gurpo de remarcação e preço de custo medio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -650,12 +657,13 @@ def test_real_custo_medio_filtro_grupo_remarcacao_preco_custo_medio_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_custo_medio()
     selecionar_periodo()
     informar_periodo()
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
-    esperar_tempo(TEMPO_ESPERA)
+    esperar_tempo(TEMPO_IMPRESSAO)
     fechar_abaimpressao()
     sair_relatorio()
     fechar_sistemarelatorio()
@@ -663,7 +671,7 @@ def test_real_custo_medio_filtro_grupo_remarcacao_preco_custo_medio_mono():
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_remarcacao
-def test_real_custo_medio_filtro_grupo_remarcacao_preco_fabrica_mon():
+def test_rel_custo_medio_filtro_grupo_remarcacao_preco_fabrica_mono():
     "Flitro gurpo de remarcação e preço de fábrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -674,19 +682,21 @@ def test_real_custo_medio_filtro_grupo_remarcacao_preco_fabrica_mon():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_fabrica()
     selecionar_periodo()
     informar_periodo()
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
-    esperar_tempo(TEMPO_ESPERA)
+    esperar_tempo(TEMPO_IMPRESSAO)
     fechar_abaimpressao()
     sair_relatorio()
     fechar_sistemarelatorio()
     esperar_tempo(TEMPO_ESPERA)
 
+
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_remarcacao
-def test_real_custo_medio_filtro_grupo_remarcacao_preco_custo_mono():
+def test_rel_custo_medio_filtro_grupo_remarcacao_preco_custo_mono():
     "Flitro gurpo de remarcação e preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -697,19 +707,21 @@ def test_real_custo_medio_filtro_grupo_remarcacao_preco_custo_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_custo()
     selecionar_periodo()
     informar_periodo()
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
-    esperar_tempo(TEMPO_ESPERA)
+    esperar_tempo(TEMPO_IMPRESSAO)
     fechar_abaimpressao()
     sair_relatorio()
     fechar_sistemarelatorio()
     esperar_tempo(TEMPO_ESPERA)
 
+
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_remarcacao
-def test_real_custo_medio_filtro_grupo_remarcacao_bruto_ultima_compra_mono():
+def test_rel_custo_medio_filtro_grupo_remarcacao_preco_bruto_compra_mono():
     "Flitro gurpo de remarcação e preço bruto ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -720,19 +732,21 @@ def test_real_custo_medio_filtro_grupo_remarcacao_bruto_ultima_compra_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_bruto_ultima_compra()
     selecionar_periodo()
     informar_periodo()
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
-    esperar_tempo(TEMPO_ESPERA)
+    esperar_tempo(TEMPO_IMPRESSAO)
     fechar_abaimpressao()
     sair_relatorio()
     fechar_sistemarelatorio()
     esperar_tempo(TEMPO_ESPERA)
 
+
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_remarcacao
-def test_real_custo_medio_filtro_grupo_remarcacao_bruto_liquido_compra_mono():
+def test_rel_custo_medio_filtro_grupo_remarcacao_preco_liquido_compra_mono():
     "Flitro gurpo de remarcação e preço bruto liquido ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -743,19 +757,21 @@ def test_real_custo_medio_filtro_grupo_remarcacao_bruto_liquido_compra_mono():
     confirmar_selecao()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_liquido_ultima_compra()
     selecionar_periodo()
     informar_periodo()
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
-    esperar_tempo(TEMPO_ESPERA)
+    esperar_tempo(TEMPO_IMPRESSAO)
     fechar_abaimpressao()
     sair_relatorio()
     fechar_sistemarelatorio()
     esperar_tempo(TEMPO_ESPERA)
 
+
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_remarcacao
-def test_real_custo_medio_filtro_grupo_remarcacao_nao_incluir_produto_sem_compra():
+def test_rel_custo_medio_filtro_grupo_remarcacao_nao_incluir_produto_sem_compra_mono():
     "Flitro gurpo de remarcação e não incluir produtos sem compra no período"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
@@ -771,7 +787,159 @@ def test_real_custo_medio_filtro_grupo_remarcacao_nao_incluir_produto_sem_compra
     informar_periodo()
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
+    esperar_tempo(TEMPO_IMPRESSAO)
+    fechar_abaimpressao()
+    sair_relatorio()
+    fechar_sistemarelatorio()
     esperar_tempo(TEMPO_ESPERA)
+
+
+# GRUPO DE ICMS
+
+
+@mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_icms
+def test_rel_custo_medio_filtro_grupo_icms_preco_custo_medio_mono():
+    "Filtro grupo de icms e preço de custo médio"
+    login_sistema()
+    digitar_codigo_relatorio(COD_4)
+    esperar_tempo(TEMPO_ESPERA)
+    selecionar_filtro_especifico()
+    selecionar_demais_filtros()
+    selecionar_grupo_icms()
+    confirmar_selecao()
+    selecionar_custo_medio_baseado_nas_compras()
+    informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
+    selecionar_preco_custo_medio()
+    selecionar_periodo()
+    informar_periodo()
+    esperar_tempo(TEMPO_ESPERA)
+    imprimir_relatorio()
+    esperar_tempo(TEMPO_IMPRESSAO)
+    fechar_abaimpressao()
+    sair_relatorio()
+    fechar_sistemarelatorio()
+    esperar_tempo(TEMPO_ESPERA)
+
+
+@mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_icms
+def test_rel_custo_medio_filtro_grupo_icms_preco_fabrica_mono():
+    "Filtro grupo de icms e preço de fábrica"
+    login_sistema()
+    digitar_codigo_relatorio(COD_4)
+    esperar_tempo(TEMPO_ESPERA)
+    selecionar_filtro_especifico()
+    selecionar_demais_filtros()
+    selecionar_grupo_icms()
+    confirmar_selecao()
+    selecionar_custo_medio_baseado_nas_compras()
+    informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
+    selecionar_preco_fabrica()
+    selecionar_periodo()
+    informar_periodo()
+    esperar_tempo(TEMPO_ESPERA)
+    imprimir_relatorio()
+    esperar_tempo(TEMPO_IMPRESSAO)
+    fechar_abaimpressao()
+    sair_relatorio()
+    fechar_sistemarelatorio()
+    esperar_tempo(TEMPO_ESPERA)
+
+
+@mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_icms
+def test_rel_custo_medio_filtro_grupo_icms_preco_custo_mono():
+    "Filtro grupo de icms e preço de custo"
+    login_sistema()
+    digitar_codigo_relatorio(COD_4)
+    esperar_tempo(TEMPO_ESPERA)
+    selecionar_filtro_especifico()
+    selecionar_demais_filtros()
+    selecionar_grupo_icms()
+    confirmar_selecao()
+    selecionar_custo_medio_baseado_nas_compras()
+    informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
+    selecionar_preco_custo_medio()
+    selecionar_periodo()
+    informar_periodo()
+    esperar_tempo(TEMPO_ESPERA)
+    imprimir_relatorio()
+    esperar_tempo(TEMPO_IMPRESSAO)
+    fechar_abaimpressao()
+    sair_relatorio()
+    fechar_sistemarelatorio()
+    esperar_tempo(TEMPO_ESPERA)
+
+
+@mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_icms
+def test_rel_custo_medio_filtro_grupo_icms_preco_bruto_compra_mono():
+    "Filtro grupo de icms e preço bruto da ultima compra"
+    login_sistema()
+    digitar_codigo_relatorio(COD_4)
+    esperar_tempo(TEMPO_ESPERA)
+    selecionar_filtro_especifico()
+    selecionar_demais_filtros()
+    selecionar_grupo_icms()
+    confirmar_selecao()
+    selecionar_custo_medio_baseado_nas_compras()
+    informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
+    selecionar_preco_bruto_ultima_compra()
+    selecionar_periodo()
+    informar_periodo()
+    esperar_tempo(TEMPO_ESPERA)
+    imprimir_relatorio()
+    esperar_tempo(TEMPO_IMPRESSAO)
+    fechar_abaimpressao()
+    sair_relatorio()
+    fechar_sistemarelatorio()
+    esperar_tempo(TEMPO_ESPERA)
+
+
+@mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_icms
+def test_rel_custo_medio_filtro_grupo_icms_preco_liquido_compra_mono():
+    "Filtro grupo de icms e preço de custo"
+    login_sistema()
+    digitar_codigo_relatorio(COD_4)
+    esperar_tempo(TEMPO_ESPERA)
+    selecionar_filtro_especifico()
+    selecionar_demais_filtros()
+    selecionar_grupo_icms()
+    confirmar_selecao()
+    selecionar_custo_medio_baseado_nas_compras()
+    informar_periodo()
+    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
+    selecionar_preco_liquido_ultima_compra()
+    selecionar_periodo()
+    informar_periodo()
+    esperar_tempo(TEMPO_ESPERA)
+    imprimir_relatorio()
+    esperar_tempo(TEMPO_IMPRESSAO)
+    fechar_abaimpressao()
+    sair_relatorio()
+    fechar_sistemarelatorio()
+    esperar_tempo(TEMPO_ESPERA)
+
+
+@mark.emitir_rel_custo_medio_vendas_mono_filtro_grupo_icms
+def test_rel_custo_medio_filtro_grupo_icms_nao_incluir_produto_sem_compra_mono():
+    "Filtro grupo de icms e preço de custo"
+    login_sistema()
+    digitar_codigo_relatorio(COD_4)
+    esperar_tempo(TEMPO_ESPERA)
+    selecionar_filtro_especifico()
+    selecionar_demais_filtros()
+    selecionar_grupo_icms()
+    confirmar_selecao()
+    selecionar_custo_medio_baseado_nas_compras()
+    informar_periodo()
+    selecionar_filtro_nao_incluir_produtos_nao_possuem_compra_periodo()
+    selecionar_periodo()
+    informar_periodo()
+    esperar_tempo(TEMPO_ESPERA)
+    imprimir_relatorio()
+    esperar_tempo(TEMPO_IMPRESSAO)
     fechar_abaimpressao()
     sair_relatorio()
     fechar_sistemarelatorio()
