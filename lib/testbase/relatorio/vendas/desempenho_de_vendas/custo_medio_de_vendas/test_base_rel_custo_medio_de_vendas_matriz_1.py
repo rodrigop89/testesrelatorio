@@ -1,5 +1,5 @@
-"""Teste base para o relatório custo médio de vendas sistema mono 
-com os filtros NCM e Código CEST"""
+"""Teste base para o relatório custo médio de vendas sistema matriz 
+com filtros todos os produtos e produto especifico"""
 # pylint: disable=C0301
 # pylint: disable=C0302
 
@@ -8,16 +8,14 @@ from lib.dados.lista_relatorios import COD_4
 from lib.dados.sistema import digitar_codigo_relatorio, login_sistema
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
 from lib.formulario.generico.f_generico import (
-    confirmar_selecao,
     fechar_abaimpressao,
     fechar_sistemarelatorio,
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
-    selecionar_codigo_cest,
-    selecionar_codigo_ncm,
-    selecionar_demais_filtros,
     selecionar_periodo,
+    selecionar_produto_especifico,
+    selecionar_todas_empresas,
 )
 from lib.formulario.vendas.desempenho_de_vendas.custo_medio_de_vendas.f_rel_custo_media_de_vendas import (
     selecionar_custo_medio_baseado_nas_compras,
@@ -29,22 +27,22 @@ from lib.formulario.vendas.desempenho_de_vendas.custo_medio_de_vendas.f_rel_cust
     selecionar_preco_custo_medio,
     selecionar_preco_fabrica,
     selecionar_preco_liquido_ultima_compra,
+    selecionar_todos_produtos,
 )
 from lib.python.python_doc import esperar_tempo
 
-## FILTRO NCM ##
+
+## FILTRO TODOS OS PRODUTOS ##
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
-def test_rel_custo_medio_filtro_ncm_preco_custo_medio_mono():
-    "Filtro NCM e preço custo médio"
+@mark.emitir_rel_custo_medio_vendas_matriz_todos_produtos
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo_medio_matriz():
+    "Filtro todos os produtos por preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
-    selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_ncm()
-    confirmar_selecao()
+    selecionar_todos_produtos()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -60,16 +58,14 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
-def test_rel_custo_medio_filtro_ncm_preco_fabrica_mono():
-    "Filtro NCM e preço de fábrica"
+@mark.emitir_rel_custo_medio_vendas_matriz_todos_produtos
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_fabrica_matriz():
+    "Filtro todos os produtos por preço de fábrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
-    selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_ncm()
-    confirmar_selecao()
+    selecionar_todos_produtos()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -85,16 +81,14 @@ def test_rel_custo_medio_filtro_ncm_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
-def test_rel_custo_medio_filtro_ncm_preco_custo_mono():
-    "Filtro NCM e preço de custo"
+@mark.emitir_rel_custo_medio_vendas_matriz_todos_produtos
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo_matriz():
+    "Filtro todos os produtos por preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
-    selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_ncm()
-    confirmar_selecao()
+    selecionar_todos_produtos()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -110,16 +104,14 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
-def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_mono():
-    "Filtro NCM e preço bruto da ultima compra"
+@mark.emitir_rel_custo_medio_vendas_matriz_todos_produtos
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_bruto_compra_matriz():
+    "Filtro todos os produtos por preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
-    selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_ncm()
-    confirmar_selecao()
+    selecionar_todos_produtos()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -135,19 +127,16 @@ def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
-def test_rel_custo_medio_filtro_ncm_preco_liquido_mono():
-    "Filtro NCM e preço liquido ultima compra"
+@mark.emitir_rel_custo_medio_vendas_matriz_todos_produtos
+def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_liquido_compra_matriz():
+    "Filtro todos os produtos por preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
-    selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_ncm()
-    confirmar_selecao()
+    selecionar_todos_produtos()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
-    selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_preco_liquido_ultima_compra()
     selecionar_periodo()
     informar_periodo()
@@ -160,17 +149,14 @@ def test_rel_custo_medio_filtro_ncm_preco_liquido_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
-def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
-    "Filtro NCM e não incluir produtos sem compras"
+@mark.emitir_rel_custo_medio_vendas_matriz_todos_produtos
+def test_rel_custo_medio_todos_produtos_nao_incluir_produtos_sem_compras_matriz():
+    "Filtro todos os produtos sem incluir produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
-    selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_ncm()
-    confirmar_selecao()
-    selecionar_custo_medio_baseado_nas_compras()
+    selecionar_todos_produtos()
     informar_periodo()
     selecionar_filtro_nao_incluir_produtos_nao_possuem_compra_periodo()
     selecionar_periodo()
@@ -184,19 +170,18 @@ def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
     esperar_tempo(TEMPO_ESPERA)
 
 
-## FILTRO CEST ##
+## FILTRO SOMENTE UM PRODUTO ESPECIFICO ##
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
-def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_mono():
-    "Filtro código cest e preço de custo médio"
+@mark.emitir_rel_custo_medio_vendas_matriz_produto_especifico
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_custo_medio_matriz():
+    "Filtro produto especifico , incluir produtos sem compras e preço de custo médio"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_cest()
-    confirmar_selecao()
+    selecionar_produto_especifico()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -212,16 +197,15 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
-def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_mono():
-    "Filtro código cest e preço de fábrica"
+@mark.emitir_rel_custo_medio_vendas_matriz_produto_especifico
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_fabrica_matriz():
+    "Filtro produto especifico , incluir produtos sem compras e preço de fabrica"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_cest()
-    confirmar_selecao()
+    selecionar_produto_especifico()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -237,16 +221,15 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
-def test_rel_custo_medio_filtro_codigo_cest_preco_custo_mono():
-    "Filtro código cest e preço de custo"
+@mark.emitir_rel_custo_medio_vendas_matriz_produto_especifico
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_custo_matriz():
+    "Filtro produto especifico , incluir produtos sem compras e preço de custo"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_cest()
-    confirmar_selecao()
+    selecionar_produto_especifico()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -262,16 +245,15 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
-def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_mono():
-    "Filtro código cest e preço bruto da ultima compra"
+@mark.emitir_rel_custo_medio_vendas_matriz_produto_especifico
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_bruto_compra_matriz():
+    "Filtro produto especifico , incluir produtos sem compras e preço bruto da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_cest()
-    confirmar_selecao()
+    selecionar_produto_especifico()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -287,16 +269,15 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
-def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_mono():
-    "Filtro código cest e preço líquido da ultima compra"
+@mark.emitir_rel_custo_medio_vendas_matriz_produto_especifico
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_liquido_compra_matriz():
+    "Filtro produto especifico , incluir produtos sem compras e preço liquido da ultima compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_cest()
-    confirmar_selecao()
+    selecionar_produto_especifico()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_incluir_produtos_nao_possuem_compra_periodo()
@@ -312,16 +293,15 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
-def test_rel_custo_medio_filtro_codigo_cest_nao_incluir_produto_sem_compra():
-    "Filtro código cest e não incluir produto na compra"
+@mark.emitir_rel_custo_medio_vendas_matriz_produto_especifico
+def test_rel_custo_medio_produto_especifico_nao_incluir_produtos_sem_compras_matriz():
+    "Filtro produto especifico não incluir produtos sem compra"
     login_sistema()
     digitar_codigo_relatorio(COD_4)
+    selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
-    selecionar_demais_filtros()
-    selecionar_codigo_cest()
-    confirmar_selecao()
+    selecionar_produto_especifico()
     selecionar_custo_medio_baseado_nas_compras()
     informar_periodo()
     selecionar_filtro_nao_incluir_produtos_nao_possuem_compra_periodo()

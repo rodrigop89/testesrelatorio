@@ -1,5 +1,5 @@
-"""Teste base para o relatório custo médio de vendas sistema mono demais filtros,
-fabricante até principio ativo"""
+"""Teste base para o relatório custo médio de vendas sistema mono com os filtros
+Fabricante, Linha, Seção, Lista SNGPC e Principio Ativo"""
 # pylint: disable=C0301
 # pylint: disable=C0302
 
