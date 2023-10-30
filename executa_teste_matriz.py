@@ -10,4 +10,6 @@
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_promocao.test_rel_rel_vendas_por_promocao_matriz import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_margem_de_lucro.test_rel_rel_vendas_por_margem_de_lucro_matriz import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_matriz_1 import *
-from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_matriz_2 import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_matriz_2 import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_matriz_3 import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_matriz_4 import *
