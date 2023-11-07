@@ -9,3 +9,7 @@
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.cancelamento_de_vendas.test_rel_rel_vendas_canceladas_filial import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_promocao.test_rel_rel_vendas_por_promocao_filial import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_margem_de_lucro.test_rel_rel_vendas_por_margem_de_lucro_filial import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_filial_1 import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_filial_2 import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_filial_3 import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_filial_4 import *
