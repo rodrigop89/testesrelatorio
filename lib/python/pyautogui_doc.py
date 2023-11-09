@@ -1,6 +1,7 @@
 """Funções com pyautogui"""
 # import time
 import pyautogui
+import pyperclip
 
 
 # função para procurar e ativar a janela
@@ -31,3 +32,20 @@ def returntowindow(pjanela):
 # coord_x, coord_y = get_coordinates()
 
 # print(f"Coordenadas encontradas: x = {coord_x}, y = {coord_y}")
+
+
+def digitar_palavra_com_acento(palavra):
+    # Digitar a palavra com acento
+    pyautogui.write(palavra)
+    pyautogui.keyDown("shift")
+    pyautogui.press("6")  # Isso pressiona a tecla "^"
+    pyautogui.keyUp("shift")
+
+
+def informar_descricao(texto):
+    """
+    Copia o texto com acento para a área de transferência e, em seguida, cola-o no campo de entrada.
+    Certifique-se de ter definido corretamente o layout do teclado para a colagem funcionar.
+    """
+    pyperclip.copy(texto)  # Copia o texto com acento para a área de transferência
+    pyautogui.hotkey("ctrl", "v")  # Cole o texto com acento do clipboard

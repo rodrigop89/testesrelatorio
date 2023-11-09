@@ -128,7 +128,6 @@ def fechar_sistemarelatorio():
 def selecionar_produto_especifico():
     "Selecionar a opção para informar um produto especifico"
     esperar_tempo(TEMPO_ESPERA)
-    # pyautogui.click(COORD_X, COORD_Y, clicks=2, interval=0.1)
     pyautogui.hotkey(ALT, D)
     pyautogui.hotkey(ALT, P)
     esperar_tempo(TEMPO_ESPERA)

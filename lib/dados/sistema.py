@@ -6,7 +6,7 @@ from lib.dados.janela import LOGIN
 from lib.dados.dados_sistema import RELATORIO, SENHA
 from lib.dados.teclado import ALT, ENTER, S, WIN, R
 from lib.dados.tempo import TEMPO_ESPERA
-from lib.python.pyautogui_doc import returntowindow
+from lib.python.pyautogui_doc import informar_descricao, returntowindow
 from lib.python.python_doc import esperar_tempo
 
 
@@ -32,6 +32,7 @@ def login_sistema():
 def digitar_codigo_relatorio(texto):
     """Função para obter o código do relatório"""
     pyautogui.hotkey(ALT, S)
-    pyautogui.typewrite(texto)
+    # pyautogui.typewrite(texto)
+    informar_descricao(texto)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(ENTER)
