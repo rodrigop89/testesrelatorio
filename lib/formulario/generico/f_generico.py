@@ -31,6 +31,7 @@ from lib.dados.teclado import (
     SPACE,
     T,
     TAB,
+    V,
     W,
 )
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
@@ -38,12 +39,12 @@ from lib.python.python_doc import esperar_tempo
 
 
 def selecionar_todas_empresas():
-    "Atalho selecionar o filtro todas as empresas"
+    "Atalho selecionar todas as empresas"
     pyautogui.hotkey(ALT, T)
 
 
 def selecionar_empresas(texto):
-    "Atalho selecionar o filtro de empresa"
+    "Atalho selecionar o sistema filial"
     pyautogui.hotkey(ALT, E)
     pyautogui.press(F4)
     esperar_tempo(TEMPO_ESPERA)
@@ -162,6 +163,14 @@ def selecionar_linha():
     pyautogui.press(ENTER)
 
 
+def selecionar_linha_alternativo():
+    "Filtro por linha utilizando outro comando diferente existente em alguns relatórios"
+    pyautogui.hotkey(ALT, L)  # Atalho diferente
+    esperar_tempo(TEMPO_ESPERA)
+    pyautogui.press(SPACE)
+    pyautogui.press(ENTER)
+
+
 def selecionar_secao():
     "Filtro por seção"
     pyautogui.hotkey(ALT, S)
@@ -245,3 +254,8 @@ def selecionar_codigo_cest():
     pyautogui.hotkey(ALT, E)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.typewrite(CEST)
+
+
+def selecionar_opcao_vendas():
+    "Filtro por Vendas"
+    pyautogui.hotkey(ALT, V)

@@ -2,9 +2,6 @@
 # pylint: disable=E0401
 import time
 from datetime import datetime
-import unicodedata
-
-import pyautogui
 
 from lib.dados.teclado import NUM_1, NUM_7
 

@@ -13,4 +13,5 @@
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_filial_2 import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_filial_3 import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_filial_4 import *
-from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_pbm.test_base_rel_vendas_por_pbm_filial import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_pbm.test_base_rel_vendas_por_pbm_filial import *
+from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_cartao.test_base_rel_vendas_por_cartao_filial import *
