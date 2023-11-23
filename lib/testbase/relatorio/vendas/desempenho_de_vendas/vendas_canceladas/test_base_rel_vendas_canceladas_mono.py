@@ -1,6 +1,4 @@
 "Teste base relatório vendas cancaladas com sistema mono"
-# pylint: disable=E0401
-# pylint: disable=R0801
 
 
 from pytest import mark

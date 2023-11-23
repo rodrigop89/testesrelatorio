@@ -1,5 +1,6 @@
-"Teste base para o relatório Vendas com Produtos Devolvidos sistema mono"
+"Teste base para o relatório Vendas com Produtos Devolvidos sistema filial"
 from pytest import mark
+from lib.dados.dados_sistema import LOJA
 from lib.dados.lista_relatorios import COD_9
 
 from lib.dados.sistema import digitar_nome_relatorio, login_sistema
@@ -10,6 +11,7 @@ from lib.formulario.generico.f_generico import (
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
+    selecionar_empresas,
     selecionar_periodo,
 )
 from lib.formulario.vendas.desempenho_de_vendas.vendas_com_produtos_devolvidos.f_rel_vendas_com_produtos_devolvidos import (
@@ -19,11 +21,12 @@ from lib.formulario.vendas.desempenho_de_vendas.vendas_com_produtos_devolvidos.f
 from lib.python.python_doc import esperar_tempo
 
 
-@mark.emitir_rel_vendas_com_produtos_devolvidos_mono
-def test_rel_vendas_com_produtos_devolvidos_periodo_devolucao_mono():
+@mark.emitir_rel_vendas_com_produtos_devolvidos_filial
+def test_rel_vendas_com_produtos_devolvidos_periodo_devolucao_filial():
     "Filtro por período devolução"
     login_sistema()
     digitar_nome_relatorio(COD_9)
+    selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_periodo_devolucao()
     selecionar_periodo()
@@ -37,11 +40,12 @@ def test_rel_vendas_com_produtos_devolvidos_periodo_devolucao_mono():
     esperar_tempo(TEMPO_ESPERA)
 
 
-@mark.emitir_rel_vendas_com_produtos_devolvidos_mono
-def test_rel_vendas_com_produtos_devolvidos_periodo_vendas_mono():
+@mark.emitir_rel_vendas_com_produtos_devolvidos_filial
+def test_rel_vendas_com_produtos_devolvidos_periodo_vendas_filial():
     "Filtro por vendas"
     login_sistema()
     digitar_nome_relatorio(COD_9)
+    selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_periodo_venda()
     selecionar_periodo()

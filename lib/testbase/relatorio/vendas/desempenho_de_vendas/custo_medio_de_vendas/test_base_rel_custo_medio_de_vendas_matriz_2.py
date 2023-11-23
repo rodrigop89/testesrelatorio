@@ -1,7 +1,5 @@
 """Teste base para o relatório custo médio de vendas sistema matriz com os filtros
 Fabricante, Linha, Seção, Lista SNGPC e Principio Ativo"""
-# pylint: disable=C0301
-# pylint: disable=C0302
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_4

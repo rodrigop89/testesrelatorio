@@ -1,6 +1,5 @@
 "Teste base relatorio vendas canceladas com sistema filial"
-# pylint: disable=E0401
-# pylint: disable=R0801
+
 
 from pytest import mark
 from lib.dados.dados_sistema import LOJA

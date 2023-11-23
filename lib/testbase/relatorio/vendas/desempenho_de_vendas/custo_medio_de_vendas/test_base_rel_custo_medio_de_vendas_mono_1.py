@@ -1,7 +1,6 @@
 """Teste base para o relatório custo médio de vendas sistema mono 
 com filtros todos os produtos e produto especifico"""
-# pylint: disable=C0301
-# pylint: disable=C0302
+
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_4
@@ -259,7 +258,7 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_b
 
 
 @mark.emitir_rel_custo_medio_vendas_mono_produto_especifico
-def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_liquido_compra_mono():
+def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_liquido_mono():
     "Filtro produto especifico , incluir produtos sem compras e preço liquido da ultima compra"
     login_sistema()
     digitar_nome_relatorio(COD_4)

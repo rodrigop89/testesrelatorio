@@ -1,7 +1,5 @@
 """Teste base para o relatório custo médio de vendas sistema mono 
 com os filtros NCM e Código CEST"""
-# pylint: disable=C0301
-# pylint: disable=C0302
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_4

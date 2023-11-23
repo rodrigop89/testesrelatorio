@@ -1,7 +1,7 @@
 """Teste base para o relatório custo médio de vendas sistema matriz com os filtros
 categoria, margem de lucro, grupo de produtos, grupo de comissão, 
 grupo de remarcação de preços e grupo de icms """
-# pylint: disable=C0301
+
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_4

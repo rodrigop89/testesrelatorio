@@ -1,6 +1,4 @@
 "Teste base relatório vendas cancaladas com sistema matriz"
-# pylint: disable=E0401
-# pylint: disable=R0801
 
 from pytest import mark
 from lib.dados.sistema import digitar_nome_relatorio, login_sistema
