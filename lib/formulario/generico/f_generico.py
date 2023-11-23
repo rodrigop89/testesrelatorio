@@ -108,7 +108,7 @@ def gerar_planilha():
     esperar_tempo(TEMPO_IMPRESSAO)
 
 
-def fechar_abaimpressao():
+def fechar_aba_impressao():
     "Fechar aba de impressão no navegador"
     pyautogui.hotkey(CTRL, SHIFT, W)
     time.sleep(3)
@@ -120,7 +120,7 @@ def sair_relatorio():
     time.sleep(2)
 
 
-def fechar_sistemarelatorio():
+def fechar_sistema_relatorio():
     "Fechar sistema de relatórios"
     pyautogui.hotkey(ALT, F4)
     pyautogui.press(ENTER)

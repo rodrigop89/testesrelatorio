@@ -5,12 +5,12 @@ grupo de remarcação de preços e grupo de icms """
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_4
-from lib.dados.sistema import digitar_codigo_relatorio, login_sistema
+from lib.dados.sistema import digitar_nome_relatorio, login_sistema
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
 from lib.formulario.generico.f_generico import (
     confirmar_selecao,
-    fechar_abaimpressao,
-    fechar_sistemarelatorio,
+    fechar_aba_impressao,
+    fechar_sistema_relatorio,
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
@@ -42,7 +42,7 @@ from lib.python.python_doc import esperar_tempo
 def test_rel_custo_medio_filtro_categoria_preco_custo_medio_mono():
     "Filtro categoria e preço custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -57,9 +57,9 @@ def test_rel_custo_medio_filtro_categoria_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -67,7 +67,7 @@ def test_rel_custo_medio_filtro_categoria_preco_custo_medio_mono():
 def test_rel_custo_medio_filtro_categoria_preco_fabrica_mono():
     "Filtro categoria e preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -82,9 +82,9 @@ def test_rel_custo_medio_filtro_categoria_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -92,7 +92,7 @@ def test_rel_custo_medio_filtro_categoria_preco_fabrica_mono():
 def test_rel_custo_medio_filtro_categoria_preco_custo_mono():
     "Filtro categoria e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -107,9 +107,9 @@ def test_rel_custo_medio_filtro_categoria_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -117,7 +117,7 @@ def test_rel_custo_medio_filtro_categoria_preco_custo_mono():
 def test_rel_custo_medio_filtro_categoria_preco_bruto_compra_mono():
     "Filtro categoria e preço bruto última compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -132,9 +132,9 @@ def test_rel_custo_medio_filtro_categoria_preco_bruto_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -142,7 +142,7 @@ def test_rel_custo_medio_filtro_categoria_preco_bruto_compra_mono():
 def test_rel_custo_medio_filtro_categoria_preco_liquido_compra_mono():
     "Filtro categoria e preço liquido última compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -157,9 +157,9 @@ def test_rel_custo_medio_filtro_categoria_preco_liquido_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -167,7 +167,7 @@ def test_rel_custo_medio_filtro_categoria_preco_liquido_compra_mono():
 def test_rel_custo_medio_filtro_categoria_nao_incluir_produtos_sem_compra():
     "Filtro categoria e não incluir produtos sem compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -181,9 +181,9 @@ def test_rel_custo_medio_filtro_categoria_nao_incluir_produtos_sem_compra():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -194,7 +194,7 @@ def test_rel_custo_medio_filtro_categoria_nao_incluir_produtos_sem_compra():
 def test_rel_custo_medio_filtro_margem_lucro_preco_custo_medio_mono():
     "Filtro margem de lucro e preço de custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -209,9 +209,9 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -219,7 +219,7 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_custo_medio_mono():
 def test_rel_custo_medio_filtro_margem_lucro_preco_fabrica_mono():
     "Filtro margem de lucro e preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -234,9 +234,9 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -244,7 +244,7 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_fabrica_mono():
 def test_rel_custo_medio_filtro_margem_lucro_preco_custo_mono():
     "Filtro margem de lucro e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -259,9 +259,9 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -269,7 +269,7 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_custo_mono():
 def test_rel_custo_medio_filtro_margem_lucro_preco_bruto_compra_mono():
     "Filtro margem de lucro e preço bruto da última compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -284,9 +284,9 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_bruto_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -294,7 +294,7 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_bruto_compra_mono():
 def test_rel_custo_medio_filtro_margem_lucro_preco_liquido_compra_mono():
     "Filtro margem de lucro e preço liquido da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -309,9 +309,9 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_liquido_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -319,7 +319,7 @@ def test_rel_custo_medio_filtro_margem_lucro_preco_liquido_compra_mono():
 def test_rel_custo_medio_filtro_margem_lucro_nao_incluir_produtos_sem_compra_mono():
     "Filtro margem de lucro e não incluir produto sem compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -333,9 +333,9 @@ def test_rel_custo_medio_filtro_margem_lucro_nao_incluir_produtos_sem_compra_mon
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -346,7 +346,7 @@ def test_rel_custo_medio_filtro_margem_lucro_nao_incluir_produtos_sem_compra_mon
 def test_rel_custo_medio_filtro_grupo_produto_preco_custo_medio_mono():
     "Filtro grupo de produto e preço de custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -361,9 +361,9 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -371,7 +371,7 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_custo_medio_mono():
 def test_rel_custo_medio_filtro_grupo_produto_preco_fabrica_mono():
     "Filtro grupo de produto e preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -386,9 +386,9 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -396,7 +396,7 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_fabrica_mono():
 def test_rel_custo_medio_filtro_grupo_produto_preco_custo_mono():
     "Filtro grupo de produto e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -411,9 +411,9 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -421,7 +421,7 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_custo_mono():
 def test_rel_custo_medio_filtro_grupo_produto_preco_bruto_compra_mono():
     "Filtro grupo de produto e preço bruto última compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -436,9 +436,9 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_bruto_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -446,7 +446,7 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_bruto_compra_mono():
 def test_rel_custo_medio_filtro_grupo_produto_preco_liquido_compra_mono():
     "Filtro grupo de produto e preço líquido da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -461,9 +461,9 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_liquido_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -471,7 +471,7 @@ def test_rel_custo_medio_filtro_grupo_produto_preco_liquido_compra_mono():
 def test_rel_custo_medio_filtro_grupo_produto_nao_incluir_produtos_sem_compra_mono():
     "Filtro grupo de produto e não incluir produto sem compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -485,9 +485,9 @@ def test_rel_custo_medio_filtro_grupo_produto_nao_incluir_produtos_sem_compra_mo
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -498,7 +498,7 @@ def test_rel_custo_medio_filtro_grupo_produto_nao_incluir_produtos_sem_compra_mo
 def test_rel_custo_medio_filtro_grupo_comissao_preco_custo_medio_mono():
     "Filtro grupo de comissão e preço de custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -513,9 +513,9 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -523,7 +523,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_custo_medio_mono():
 def test_rel_custo_medio_filtro_grupo_comissao_preco_fabrica_mono():
     "Filtro grupo de comissão e preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -538,9 +538,9 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -548,7 +548,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_fabrica_mono():
 def test_rel_custo_medio_filtro_grupo_comissao_preco_custo_mono():
     "Filtro grupo de comissão e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -563,9 +563,9 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -573,7 +573,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_custo_mono():
 def test_rel_custo_medio_filtro_grupo_comissao_preco_bruto_compra_mono():
     "Filtro grupo de comissão e preço bruto da última compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -588,9 +588,9 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_bruto_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -598,7 +598,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_bruto_compra_mono():
 def test_rel_custo_medio_filtro_grupo_comissao_preco_liquido_compra_mono():
     "Filtro grupo de comissão e preço liquido da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -613,9 +613,9 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_liquido_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -623,7 +623,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_preco_liquido_compra_mono():
 def test_rel_custo_medio_filtro_grupo_comissao_nao_incluir_produtos_sem_compra_mono():
     "Filtro grupo de comissão e não incluir produtos sem compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -637,9 +637,9 @@ def test_rel_custo_medio_filtro_grupo_comissao_nao_incluir_produtos_sem_compra_m
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -650,7 +650,7 @@ def test_rel_custo_medio_filtro_grupo_comissao_nao_incluir_produtos_sem_compra_m
 def test_rel_custo_medio_filtro_grupo_remarcacao_preco_custo_medio_mono():
     "Flitro gurpo de remarcação e preço de custo medio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -665,9 +665,9 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -675,7 +675,7 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_custo_medio_mono():
 def test_rel_custo_medio_filtro_grupo_remarcacao_preco_fabrica_mono():
     "Flitro gurpo de remarcação e preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -690,9 +690,9 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -700,7 +700,7 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_fabrica_mono():
 def test_rel_custo_medio_filtro_grupo_remarcacao_preco_custo_mono():
     "Flitro gurpo de remarcação e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -715,9 +715,9 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -725,7 +725,7 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_custo_mono():
 def test_rel_custo_medio_filtro_grupo_remarcacao_preco_bruto_compra_mono():
     "Flitro gurpo de remarcação e preço bruto ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -740,9 +740,9 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_bruto_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -750,7 +750,7 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_bruto_compra_mono():
 def test_rel_custo_medio_filtro_grupo_remarcacao_preco_liquido_compra_mono():
     "Flitro gurpo de remarcação e preço bruto liquido ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -765,9 +765,9 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_liquido_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -775,7 +775,7 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_preco_liquido_compra_mono():
 def test_rel_custo_medio_filtro_grupo_remarcacao_nao_incluir_produto_sem_compra_mono():
     "Flitro gurpo de remarcação e não incluir produtos sem compra no período"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -789,9 +789,9 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_nao_incluir_produto_sem_compra_
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -802,7 +802,7 @@ def test_rel_custo_medio_filtro_grupo_remarcacao_nao_incluir_produto_sem_compra_
 def test_rel_custo_medio_filtro_grupo_icms_preco_custo_medio_mono():
     "Filtro grupo de icms e preço de custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -817,9 +817,9 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -827,7 +827,7 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_custo_medio_mono():
 def test_rel_custo_medio_filtro_grupo_icms_preco_fabrica_mono():
     "Filtro grupo de icms e preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -842,9 +842,9 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -852,7 +852,7 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_fabrica_mono():
 def test_rel_custo_medio_filtro_grupo_icms_preco_custo_mono():
     "Filtro grupo de icms e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -867,9 +867,9 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -877,7 +877,7 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_custo_mono():
 def test_rel_custo_medio_filtro_grupo_icms_preco_bruto_compra_mono():
     "Filtro grupo de icms e preço bruto da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -892,9 +892,9 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_bruto_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -902,7 +902,7 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_bruto_compra_mono():
 def test_rel_custo_medio_filtro_grupo_icms_preco_liquido_compra_mono():
     "Filtro grupo de icms e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -917,9 +917,9 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_liquido_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -927,7 +927,7 @@ def test_rel_custo_medio_filtro_grupo_icms_preco_liquido_compra_mono():
 def test_rel_custo_medio_filtro_grupo_icms_nao_incluir_produto_sem_compra_mono():
     "Filtro grupo de icms e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -941,7 +941,7 @@ def test_rel_custo_medio_filtro_grupo_icms_nao_incluir_produto_sem_compra_mono()
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)

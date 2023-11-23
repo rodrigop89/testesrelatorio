@@ -29,7 +29,7 @@ def login_sistema():
     esperar_tempo(TEMPO_ESPERA)
 
 
-def digitar_codigo_relatorio(texto):
+def digitar_nome_relatorio(texto):
     """Função para obter o código do relatório"""
     pyautogui.hotkey(ALT, S)
     # pyautogui.typewrite(texto)

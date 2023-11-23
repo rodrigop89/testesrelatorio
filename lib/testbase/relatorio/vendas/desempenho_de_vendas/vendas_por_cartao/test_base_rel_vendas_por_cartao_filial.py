@@ -3,11 +3,11 @@
 from pytest import mark
 from lib.dados.dados_sistema import LOJA
 from lib.dados.lista_relatorios import COD_7
-from lib.dados.sistema import digitar_codigo_relatorio, login_sistema
+from lib.dados.sistema import digitar_nome_relatorio, login_sistema
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
 from lib.formulario.generico.f_generico import (
-    fechar_abaimpressao,
-    fechar_sistemarelatorio,
+    fechar_aba_impressao,
+    fechar_sistema_relatorio,
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
@@ -27,7 +27,7 @@ from lib.python.python_doc import esperar_tempo
 def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_venda_filial():
     "Filtro todos cartões e ordando por vendas"
     login_sistema()
-    digitar_codigo_relatorio(COD_7)
+    digitar_nome_relatorio(COD_7)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todos_cartoes()
@@ -37,9 +37,9 @@ def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_venda_filial():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -47,7 +47,7 @@ def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_venda_filial():
 def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_linha_filial():
     "Filtro todos cartões e ordenado por linha"
     login_sistema()
-    digitar_codigo_relatorio(COD_7)
+    digitar_nome_relatorio(COD_7)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todos_cartoes()
@@ -57,9 +57,9 @@ def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_linha_filial():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -67,7 +67,7 @@ def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_linha_filial():
 def test_rel_vendas_por_cartao_especifico_ordenar_por_venda_filial():
     "Filtro cartão específico e ordenado por vendas"
     login_sistema()
-    digitar_codigo_relatorio(COD_7)
+    digitar_nome_relatorio(COD_7)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_cartao()
@@ -77,9 +77,9 @@ def test_rel_vendas_por_cartao_especifico_ordenar_por_venda_filial():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -87,7 +87,7 @@ def test_rel_vendas_por_cartao_especifico_ordenar_por_venda_filial():
 def test_rel_vendas_por_carta_especifico_ordernar_por_linha_filial():
     "Filtro cartão específico  ordenado por linha"
     login_sistema()
-    digitar_codigo_relatorio(COD_7)
+    digitar_nome_relatorio(COD_7)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_cartao()
@@ -97,7 +97,7 @@ def test_rel_vendas_por_carta_especifico_ordernar_por_linha_filial():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)

@@ -6,11 +6,11 @@ com filtros todos os produtos e produto especifico"""
 from pytest import mark
 from lib.dados.dados_sistema import LOJA
 from lib.dados.lista_relatorios import COD_4
-from lib.dados.sistema import digitar_codigo_relatorio, login_sistema
+from lib.dados.sistema import digitar_nome_relatorio, login_sistema
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
 from lib.formulario.generico.f_generico import (
-    fechar_abaimpressao,
-    fechar_sistemarelatorio,
+    fechar_aba_impressao,
+    fechar_sistema_relatorio,
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
@@ -40,7 +40,7 @@ from lib.python.python_doc import esperar_tempo
 def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo_medio_filial():
     "Filtro todos os produtos por preço de custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todos_produtos()
@@ -53,9 +53,9 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -63,7 +63,7 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo
 def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_fabrica_filial():
     "Filtro todos os produtos por preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todos_produtos()
@@ -76,9 +76,9 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_fabri
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -86,7 +86,7 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_fabri
 def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo_filial():
     "Filtro todos os produtos por preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todos_produtos()
@@ -99,9 +99,9 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -109,7 +109,7 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_custo
 def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_bruto_compra_filial():
     "Filtro todos os produtos por preço bruto da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todos_produtos()
@@ -122,9 +122,9 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_bruto
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -132,7 +132,7 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_bruto
 def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_liquido_compra_filial():
     "Filtro todos os produtos por preço liquido da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todos_produtos()
@@ -144,9 +144,9 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_liqui
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -154,7 +154,7 @@ def test_rel_custo_medio_todos_produtos_incluir_produtos_sem_compras_preco_liqui
 def test_rel_custo_medio_todos_produtos_nao_incluir_produtos_sem_compras_filial():
     "Filtro todos os produtos sem incluir produtos sem compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todos_produtos()
@@ -165,9 +165,9 @@ def test_rel_custo_medio_todos_produtos_nao_incluir_produtos_sem_compras_filial(
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -178,7 +178,7 @@ def test_rel_custo_medio_todos_produtos_nao_incluir_produtos_sem_compras_filial(
 def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_custo_medio_filial():
     "Filtro produto especifico , incluir produtos sem compras e preço de custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
@@ -192,9 +192,9 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_c
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -202,7 +202,7 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_c
 def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_fabrica_filial():
     "Filtro produto especifico , incluir produtos sem compras e preço de fabrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
@@ -216,9 +216,9 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_f
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -226,7 +226,7 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_f
 def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_custo_filial():
     "Filtro produto especifico , incluir produtos sem compras e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
@@ -240,9 +240,9 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_c
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -250,7 +250,7 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_c
 def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_bruto_compra_filial():
     "Filtro produto especifico , incluir produtos sem compras e preço bruto da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
@@ -264,9 +264,9 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_b
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -274,7 +274,7 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_b
 def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_liquido_compra_filial():
     "Filtro produto especifico , incluir produtos sem compras e preço liquido da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
@@ -288,9 +288,9 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_l
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -298,7 +298,7 @@ def test_rel_custo_medio_produto_especifico_incluir_produtos_sem_compras_preco_l
 def test_rel_custo_medio_produto_especifico_nao_incluir_produtos_sem_compras_filial():
     "Filtro produto especifico não incluir produtos sem compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
@@ -311,7 +311,7 @@ def test_rel_custo_medio_produto_especifico_nao_incluir_produtos_sem_compras_fil
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)

@@ -6,13 +6,13 @@
 
 from pytest import mark
 from lib.dados.dados_sistema import LOJA
-from lib.dados.sistema import digitar_codigo_relatorio, login_sistema
+from lib.dados.sistema import digitar_nome_relatorio, login_sistema
 from lib.dados.lista_relatorios import COD_3
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
 from lib.formulario.generico.f_generico import (
     apertar_enter,
-    fechar_abaimpressao,
-    fechar_sistemarelatorio,
+    fechar_aba_impressao,
+    fechar_sistema_relatorio,
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
@@ -33,7 +33,7 @@ from lib.python.python_doc import esperar_tempo
 def test_rel_vendas_por_promocao_todas_promocoes_analitico_incluir_vendas_filial():
     "Filtro todas promoções, analitico e incluindo vendas sem promoção"
     login_sistema()
-    digitar_codigo_relatorio(COD_3)
+    digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_empresas(LOJA)
     listar_todas_promocoes()
@@ -43,16 +43,16 @@ def test_rel_vendas_por_promocao_todas_promocoes_analitico_incluir_vendas_filial
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_promocao_filial
 def test_rel_vendas_por_promocao_todas_promocoes_analitico_sem_incluir_vendas_filial():
     "Filtro todas promoções, analitico e retirando vendas sem promoção"
     login_sistema()
-    digitar_codigo_relatorio(COD_3)
+    digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_empresas(LOJA)
     listar_todas_promocoes()
@@ -63,16 +63,16 @@ def test_rel_vendas_por_promocao_todas_promocoes_analitico_sem_incluir_vendas_fi
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_promocao_filial
 def test_rel_vendas_por_promocao_seleciona_promocao_analitico_incluir_vendas_filial():
     "Filtro com uma promoção especifica, analitico e incluindo vendas sem promoção"
     login_sistema()
-    digitar_codigo_relatorio(COD_3)
+    digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_empresas(LOJA)
     listar_promocao_especifica()
@@ -84,16 +84,16 @@ def test_rel_vendas_por_promocao_seleciona_promocao_analitico_incluir_vendas_fil
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_promocao_filial
 def test_rel_vendas_por_promocao_seleciona_promocao_analitico_sem_incluir_vendas_filial():
     "Filtro com uma promoção especifica, analitico e retirando vendas sem promoção"
     login_sistema()
-    digitar_codigo_relatorio(COD_3)
+    digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_empresas(LOJA)
     listar_promocao_especifica()
@@ -107,16 +107,16 @@ def test_rel_vendas_por_promocao_seleciona_promocao_analitico_sem_incluir_vendas
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_promocao_filial
 def test_rel_vendas_por_promocao_todas_promocoes_sintetico_incluir_vendas_filial():
     "Filtro todas promoções, sintetico e incluindo vendas sem promoção"
     login_sistema()
-    digitar_codigo_relatorio(COD_3)
+    digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_empresas(LOJA)
     listar_todas_promocoes()
@@ -126,16 +126,16 @@ def test_rel_vendas_por_promocao_todas_promocoes_sintetico_incluir_vendas_filial
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_promocao_filial
 def test_rel_vendas_por_promocao_todas_promocoes_sintetico_sem_incluir_vendas_filial():
     "Filtro todas promoções, sintético e retirando vendas sem promoção"
     login_sistema()
-    digitar_codigo_relatorio(COD_3)
+    digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_empresas(LOJA)
     listar_todas_promocoes()
@@ -146,16 +146,16 @@ def test_rel_vendas_por_promocao_todas_promocoes_sintetico_sem_incluir_vendas_fi
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_promocao_filial
 def test_rel_vendas_por_promocao_seleciona_promocao_sintetico_incluir_vendas_filial():
     "Filtro com uma promoção especifica, sintetico e incluindo vendas sem promoção"
     login_sistema()
-    digitar_codigo_relatorio(COD_3)
+    digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_empresas(LOJA)
     listar_promocao_especifica()
@@ -167,16 +167,16 @@ def test_rel_vendas_por_promocao_seleciona_promocao_sintetico_incluir_vendas_fil
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_promocao_filial
 def test_rel_vendas_por_promocao_seleciona_promocao_sintetico_sem_incluir_vendas_filial():
     "Filtro com uma promoção especifica, sintetico e retirando vendas sem promoção"
     login_sistema()
-    digitar_codigo_relatorio(COD_3)
+    digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_empresas(LOJA)
     listar_promocao_especifica()
@@ -190,6 +190,6 @@ def test_rel_vendas_por_promocao_seleciona_promocao_sintetico_sem_incluir_vendas
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()

@@ -5,12 +5,12 @@
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_5
-from lib.dados.sistema import digitar_codigo_relatorio, login_sistema
+from lib.dados.sistema import digitar_nome_relatorio, login_sistema
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
 from lib.formulario.generico.f_generico import (
     apertar_enter,
-    fechar_abaimpressao,
-    fechar_sistemarelatorio,
+    fechar_aba_impressao,
+    fechar_sistema_relatorio,
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
@@ -30,7 +30,7 @@ from lib.python.python_doc import esperar_tempo
 def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_matriz_todas_empresas():
     "Filtro todas as margens de lucro com impressão analitico"
     login_sistema()
-    digitar_codigo_relatorio(COD_5)
+    digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todas_empresas()
     selecionar_todas_margens_de_lucro()
@@ -40,16 +40,16 @@ def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_matriz_tod
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_margem_lucro_matriz
 def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_matriz_todas_empresas():
     "Filtro todas as margens de lucro com impressão sintético"
     login_sistema()
-    digitar_codigo_relatorio(COD_5)
+    digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todas_empresas()
     selecionar_todas_margens_de_lucro()
@@ -59,16 +59,16 @@ def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_matriz_tod
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_margem_lucro_matriz
 def test_rel_vendas_por_margem_lucro_seleciona_margem_analitico_matriz_todas_empresas():
     "Filtro magrem de lucro específica com impressão analitico"
     login_sistema()
-    digitar_codigo_relatorio(COD_5)
+    digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todas_empresas()
     selecionar_margem_especifica()
@@ -80,16 +80,16 @@ def test_rel_vendas_por_margem_lucro_seleciona_margem_analitico_matriz_todas_emp
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
 
 
 @mark.emitir_rel_vendas_margem_lucro_matriz
 def test_rel_vendas_por_margem_lucro_seleciona_margem_sintetico_matriz_todas_empresas():
     "Filtro magrem de lucro específica com impressão sintético"
     login_sistema()
-    digitar_codigo_relatorio(COD_5)
+    digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_todas_empresas()
     selecionar_margem_especifica()
@@ -101,6 +101,6 @@ def test_rel_vendas_por_margem_lucro_seleciona_margem_sintetico_matriz_todas_emp
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()

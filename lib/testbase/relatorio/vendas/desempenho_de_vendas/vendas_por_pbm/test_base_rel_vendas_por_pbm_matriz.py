@@ -3,11 +3,11 @@
 from pytest import mark
 from lib.dados.dados_sistema import FARMACIA_POPULAR
 from lib.dados.lista_relatorios import COD_6
-from lib.dados.sistema import digitar_codigo_relatorio, login_sistema
+from lib.dados.sistema import digitar_nome_relatorio, login_sistema
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
 from lib.formulario.generico.f_generico import (
-    fechar_abaimpressao,
-    fechar_sistemarelatorio,
+    fechar_aba_impressao,
+    fechar_sistema_relatorio,
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
@@ -31,7 +31,7 @@ from lib.python.python_doc import esperar_tempo
 def test_rel_vendas_por_pbm_todos_pbms_analitico_matriz():
     "Filtro todos PBMs de forma analitica"
     login_sistema()
-    digitar_codigo_relatorio(COD_6)
+    digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     seleciona_todos_pbms()
@@ -41,9 +41,9 @@ def test_rel_vendas_por_pbm_todos_pbms_analitico_matriz():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -51,7 +51,7 @@ def test_rel_vendas_por_pbm_todos_pbms_analitico_matriz():
 def test_rel_vendas_por_pbm_todos_pbms_analitico_apresenta_informacoes_adicionais_matriz():
     "Filtro todos PBMs de forma analitica com informações adicionais da venda"
     login_sistema()
-    digitar_codigo_relatorio(COD_6)
+    digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     seleciona_todos_pbms()
@@ -62,9 +62,9 @@ def test_rel_vendas_por_pbm_todos_pbms_analitico_apresenta_informacoes_adicionai
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -72,7 +72,7 @@ def test_rel_vendas_por_pbm_todos_pbms_analitico_apresenta_informacoes_adicionai
 def test_rel_vendas_por_pbm_todos_pbms_sintetico_matriz():
     "Filtro todos PBMs de forma sintética"
     login_sistema()
-    digitar_codigo_relatorio(COD_6)
+    digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     seleciona_todos_pbms()
@@ -82,9 +82,9 @@ def test_rel_vendas_por_pbm_todos_pbms_sintetico_matriz():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -95,7 +95,7 @@ def test_rel_vendas_por_pbm_todos_pbms_sintetico_matriz():
 def test_rel_vendas_por_pbm_especifico_analitico_matriz():
     "Filtro PBM específico de forma analitica"
     login_sistema()
-    digitar_codigo_relatorio(COD_6)
+    digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     seleciona_pbm(FARMACIA_POPULAR)
@@ -105,9 +105,9 @@ def test_rel_vendas_por_pbm_especifico_analitico_matriz():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -115,7 +115,7 @@ def test_rel_vendas_por_pbm_especifico_analitico_matriz():
 def test_rel_vendas_por_pbm_especifico_analitico_apresenta_informacoes_adicionais_matriz():
     "Filtro PBM específico de forma analitica com informacoes adicionais"
     login_sistema()
-    digitar_codigo_relatorio(COD_6)
+    digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     seleciona_pbm(FARMACIA_POPULAR)
@@ -126,9 +126,9 @@ def test_rel_vendas_por_pbm_especifico_analitico_apresenta_informacoes_adicionai
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -136,7 +136,7 @@ def test_rel_vendas_por_pbm_especifico_analitico_apresenta_informacoes_adicionai
 def test_rel_vendas_por_pbm_especifico_sintetico_matriz():
     "Filtro PBM específico de forma sintético"
     login_sistema()
-    digitar_codigo_relatorio(COD_6)
+    digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
     esperar_tempo(TEMPO_ESPERA)
     seleciona_pbm(FARMACIA_POPULAR)
@@ -146,7 +146,7 @@ def test_rel_vendas_por_pbm_especifico_sintetico_matriz():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)

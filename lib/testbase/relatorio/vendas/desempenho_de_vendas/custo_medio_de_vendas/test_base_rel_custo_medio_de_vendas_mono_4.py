@@ -5,12 +5,12 @@ com os filtros NCM e Código CEST"""
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_4
-from lib.dados.sistema import digitar_codigo_relatorio, login_sistema
+from lib.dados.sistema import digitar_nome_relatorio, login_sistema
 from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
 from lib.formulario.generico.f_generico import (
     confirmar_selecao,
-    fechar_abaimpressao,
-    fechar_sistemarelatorio,
+    fechar_aba_impressao,
+    fechar_sistema_relatorio,
     imprimir_relatorio,
     informar_periodo,
     sair_relatorio,
@@ -39,7 +39,7 @@ from lib.python.python_doc import esperar_tempo
 def test_rel_custo_medio_filtro_ncm_preco_custo_medio_mono():
     "Filtro NCM e preço custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -54,9 +54,9 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -64,7 +64,7 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_medio_mono():
 def test_rel_custo_medio_filtro_ncm_preco_fabrica_mono():
     "Filtro NCM e preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -79,9 +79,9 @@ def test_rel_custo_medio_filtro_ncm_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -89,7 +89,7 @@ def test_rel_custo_medio_filtro_ncm_preco_fabrica_mono():
 def test_rel_custo_medio_filtro_ncm_preco_custo_mono():
     "Filtro NCM e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -104,9 +104,9 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -114,7 +114,7 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_mono():
 def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_mono():
     "Filtro NCM e preço bruto da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -129,9 +129,9 @@ def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -139,7 +139,7 @@ def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_mono():
 def test_rel_custo_medio_filtro_ncm_preco_liquido_mono():
     "Filtro NCM e preço liquido ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -154,9 +154,9 @@ def test_rel_custo_medio_filtro_ncm_preco_liquido_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -164,7 +164,7 @@ def test_rel_custo_medio_filtro_ncm_preco_liquido_mono():
 def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
     "Filtro NCM e não incluir produtos sem compras"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -178,9 +178,9 @@ def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -191,7 +191,7 @@ def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
 def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_mono():
     "Filtro código cest e preço de custo médio"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -206,9 +206,9 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -216,7 +216,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_mono():
 def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_mono():
     "Filtro código cest e preço de fábrica"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -231,9 +231,9 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -241,7 +241,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_mono():
 def test_rel_custo_medio_filtro_codigo_cest_preco_custo_mono():
     "Filtro código cest e preço de custo"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -256,9 +256,9 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -266,7 +266,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_mono():
 def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_mono():
     "Filtro código cest e preço bruto da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -281,9 +281,9 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -291,7 +291,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_mono():
 def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_mono():
     "Filtro código cest e preço líquido da ultima compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -306,9 +306,9 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_mono():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)
 
 
@@ -316,7 +316,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_mono():
 def test_rel_custo_medio_filtro_codigo_cest_nao_incluir_produto_sem_compra():
     "Filtro código cest e não incluir produto na compra"
     login_sistema()
-    digitar_codigo_relatorio(COD_4)
+    digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
     selecionar_filtro_especifico()
     selecionar_demais_filtros()
@@ -330,7 +330,7 @@ def test_rel_custo_medio_filtro_codigo_cest_nao_incluir_produto_sem_compra():
     esperar_tempo(TEMPO_ESPERA)
     imprimir_relatorio()
     esperar_tempo(TEMPO_IMPRESSAO)
-    fechar_abaimpressao()
+    fechar_aba_impressao()
     sair_relatorio()
-    fechar_sistemarelatorio()
+    fechar_sistema_relatorio()
     esperar_tempo(TEMPO_ESPERA)

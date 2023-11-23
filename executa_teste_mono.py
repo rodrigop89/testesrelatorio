@@ -15,4 +15,5 @@
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_mono_3 import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.custo_medio_de_vendas.test_base_rel_custo_medio_de_vendas_mono_4 import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_pbm.test_base_rel_vendas_por_pbm_mono import *
-from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_cartao.test_base_rel_vendas_por_cartao_mono import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_por_cartao.test_base_rel_vendas_por_cartao_mono import *
+from lib.testbase.relatorio.vendas.desempenho_de_vendas.vendas_com_produtos_devolvidos.test_base_rel_vendas_com_produtos_devolvidos_mono import *
