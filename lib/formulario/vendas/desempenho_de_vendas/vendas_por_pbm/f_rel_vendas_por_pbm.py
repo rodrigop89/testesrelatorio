@@ -4,9 +4,20 @@
 import pyautogui
 
 
-from lib.dados.teclado import ALT, ENTER, ESC, F2, O, P, SPACE, TAB
+from lib.dados.teclado import (
+    ALT,
+    ENTER,
+    ESC,
+    F2,
+    O,
+    P,
+    SPACE,
+    TAB,
+)
 from lib.dados.tempo import TEMPO_ESPERA
-from lib.python.pyautogui_doc import informar_descricao
+from lib.python.pyautogui_doc import (
+    informar_descricao,
+)
 
 from lib.python.python_doc import esperar_tempo
 

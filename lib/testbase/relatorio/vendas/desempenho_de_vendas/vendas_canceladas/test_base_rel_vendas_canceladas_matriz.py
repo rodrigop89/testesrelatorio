@@ -1,7 +1,10 @@
 "Teste base relatório vendas cancaladas com sistema matriz"
 
 from pytest import mark
-from lib.dados.sistema import digitar_nome_relatorio, login_sistema
+from lib.dados.sistema import (
+    digitar_nome_relatorio,
+    login_sistema,
+)
 from lib.dados.lista_relatorios import COD_8
 from lib.formulario.generico.f_generico import (
     fechar_aba_impressao,

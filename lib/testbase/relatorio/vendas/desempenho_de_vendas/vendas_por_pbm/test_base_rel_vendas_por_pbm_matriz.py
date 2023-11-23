@@ -1,10 +1,18 @@
 "Teste base para o relatório Vendas por PBM utilizando sistema matriz"
 
 from pytest import mark
-from lib.dados.dados_sistema import FARMACIA_POPULAR
+from lib.dados.dados_sistema import (
+    FARMACIA_POPULAR,
+)
 from lib.dados.lista_relatorios import COD_6
-from lib.dados.sistema import digitar_nome_relatorio, login_sistema
-from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
+from lib.dados.sistema import (
+    digitar_nome_relatorio,
+    login_sistema,
+)
+from lib.dados.tempo import (
+    TEMPO_ESPERA,
+    TEMPO_IMPRESSAO,
+)
 from lib.formulario.generico.f_generico import (
     fechar_aba_impressao,
     fechar_sistema_relatorio,

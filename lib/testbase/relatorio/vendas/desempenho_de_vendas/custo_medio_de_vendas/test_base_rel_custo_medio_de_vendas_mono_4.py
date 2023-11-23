@@ -1,10 +1,17 @@
 """Teste base para o relatório custo médio de vendas sistema mono 
 com os filtros NCM e Código CEST"""
+# pylint: disable=C0301
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_4
-from lib.dados.sistema import digitar_nome_relatorio, login_sistema
-from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
+from lib.dados.sistema import (
+    digitar_nome_relatorio,
+    login_sistema,
+)
+from lib.dados.tempo import (
+    TEMPO_ESPERA,
+    TEMPO_IMPRESSAO,
+)
 from lib.formulario.generico.f_generico import (
     confirmar_selecao,
     fechar_aba_impressao,

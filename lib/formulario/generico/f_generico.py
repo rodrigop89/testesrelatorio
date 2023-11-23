@@ -3,8 +3,17 @@
 import time
 
 import pyautogui
-from lib.dados.dados_sistema import CEST, NCM, PRODUTO
-from lib.dados.data import MES_ANO, PERIODO_FINAL, PERIODO_INICIAL, periodo
+from lib.dados.dados_sistema import (
+    CEST,
+    NCM,
+    PRODUTO,
+)
+from lib.dados.data import (
+    MES_ANO,
+    PERIODO_FINAL,
+    PERIODO_INICIAL,
+    periodo,
+)
 
 from lib.dados.teclado import (
     A,
@@ -34,7 +43,10 @@ from lib.dados.teclado import (
     V,
     W,
 )
-from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
+from lib.dados.tempo import (
+    TEMPO_ESPERA,
+    TEMPO_IMPRESSAO,
+)
 from lib.python.python_doc import esperar_tempo
 
 

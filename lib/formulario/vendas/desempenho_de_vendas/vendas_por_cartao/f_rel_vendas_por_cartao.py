@@ -1,7 +1,13 @@
 "Formulário Relatório Vendas por Cartão"
 import pyautogui
 
-from lib.dados.teclado import ALT, C, ENTER, O, SPACE
+from lib.dados.teclado import (
+    ALT,
+    C,
+    ENTER,
+    O,
+    SPACE,
+)
 from lib.dados.tempo import TEMPO_ESPERA
 from lib.python.python_doc import esperar_tempo
 

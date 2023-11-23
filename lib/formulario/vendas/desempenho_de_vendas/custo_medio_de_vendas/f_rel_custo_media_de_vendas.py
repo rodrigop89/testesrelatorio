@@ -2,7 +2,19 @@
 import pyautogui
 
 
-from lib.dados.teclado import ALT, C, F, M, N, NUM_1, NUM_2, NUM_3, NUM_4, NUM_5, O
+from lib.dados.teclado import (
+    ALT,
+    C,
+    F,
+    M,
+    N,
+    NUM_1,
+    NUM_2,
+    NUM_3,
+    NUM_4,
+    NUM_5,
+    O,
+)
 
 
 def selecionar_todos_produtos():

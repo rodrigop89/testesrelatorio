@@ -2,8 +2,16 @@
 from pytest import mark
 from lib.dados.lista_relatorios import COD_9
 
-from lib.dados.sistema import digitar_nome_relatorio, login_sistema
-from lib.dados.tempo import TEMPO_ESPERA, TEMPO_IMPRESSAO
+# pylint: disable=C0301
+
+from lib.dados.sistema import (
+    digitar_nome_relatorio,
+    login_sistema,
+)
+from lib.dados.tempo import (
+    TEMPO_ESPERA,
+    TEMPO_IMPRESSAO,
+)
 from lib.formulario.generico.f_generico import (
     fechar_aba_impressao,
     fechar_sistema_relatorio,

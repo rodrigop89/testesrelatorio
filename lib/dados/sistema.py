@@ -3,10 +3,22 @@
 import pyautogui
 
 from lib.dados.janela import LOGIN
-from lib.dados.dados_sistema import RELATORIO, SENHA
-from lib.dados.teclado import ALT, ENTER, S, WIN, R
+from lib.dados.dados_sistema import (
+    RELATORIO,
+    SENHA,
+)
+from lib.dados.teclado import (
+    ALT,
+    ENTER,
+    S,
+    WIN,
+    R,
+)
 from lib.dados.tempo import TEMPO_ESPERA
-from lib.python.pyautogui_doc import informar_descricao, returntowindow
+from lib.python.pyautogui_doc import (
+    informar_descricao,
+    returntowindow,
+)
 from lib.python.python_doc import esperar_tempo
 
 
