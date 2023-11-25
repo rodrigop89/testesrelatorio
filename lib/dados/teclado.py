@@ -1,4 +1,4 @@
-"""Teclado"""
+"""Classe Teclado"""
 # Letras
 A = "a"
 B = "b"

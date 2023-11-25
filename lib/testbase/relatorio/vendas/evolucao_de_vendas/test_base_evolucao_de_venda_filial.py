@@ -1,4 +1,4 @@
-"Teste base relatório evolução de vendas com sistema filial"
+"""Teste base relatório evolução de vendas com sistema filial"""
 # pylint: disable=E0401
 
 from pytest import mark
@@ -23,7 +23,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_evolucao_filial
 def test_rel_evolucao_vendas_filial():
-    "Teste sistema filial"
+    """Teste sistema filial"""
     login_sistema()
     digitar_nome_relatorio(COD_1)
     selecionar_empresas(LOJA)

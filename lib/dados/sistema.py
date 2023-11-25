@@ -31,7 +31,7 @@ def inicializar_sistema():
 
 
 def login_sistema():
-    "Login"
+    """Login"""
     # for numero in range(5):
     # numero = 0
     inicializar_sistema()

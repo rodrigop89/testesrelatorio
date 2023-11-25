@@ -1,4 +1,4 @@
-"Teste base relatório vendas cancaladas com sistema mono"
+"""Teste base relatório vendas cancaladas com sistema mono"""
 
 
 from pytest import mark
@@ -25,7 +25,7 @@ from lib.formulario.vendas.desempenho_de_vendas.vendas_canceladas.f_rel_vendas_c
 
 @mark.emitir_rel_vendas_canceladas_mono
 def test_rel_vendas_canceladas_analitico_cancelamento_mono():
-    "Filtro analitico por periodo de cancelamento"
+    """Filtro analitico por periodo de cancelamento"""
     login_sistema()
     digitar_nome_relatorio(COD_8)
     selecionar_analitico()
@@ -40,7 +40,7 @@ def test_rel_vendas_canceladas_analitico_cancelamento_mono():
 
 @mark.emitir_rel_vendas_canceladas_mono
 def test_rel_vendas_canceladas_analitico_vendas_mono():
-    "Filtro analitico por periodo de vendas"
+    """Filtro analitico por periodo de vendas"""
     login_sistema()
     digitar_nome_relatorio(COD_8)
     selecionar_analitico()
@@ -55,7 +55,7 @@ def test_rel_vendas_canceladas_analitico_vendas_mono():
 
 @mark.emitir_rel_vendas_canceladas_mono
 def test_rel_vendas_canceladas_sintetico_cancelamento_mono():
-    "Filtro sintetico por periodo de cancelamento"
+    """Filtro sintetico por periodo de cancelamento"""
     login_sistema()
     digitar_nome_relatorio(COD_8)
     selecionar_sintetico()
@@ -70,7 +70,7 @@ def test_rel_vendas_canceladas_sintetico_cancelamento_mono():
 
 @mark.emitir_rel_vendas_canceladas_mono
 def test_rel_vendas_canceladas_sintetico_venda_mono():
-    "Filtro sintetico por periodo de vendas"
+    """Filtro sintetico por periodo de vendas"""
     login_sistema()
     digitar_nome_relatorio(COD_8)
     selecionar_sintetico()

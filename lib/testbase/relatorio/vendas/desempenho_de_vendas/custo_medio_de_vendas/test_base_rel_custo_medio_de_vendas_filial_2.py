@@ -43,12 +43,12 @@ from lib.formulario.vendas.desempenho_de_vendas.custo_medio_de_vendas.f_rel_cust
 from lib.python.python_doc import esperar_tempo
 
 
-## FILTRO SOMENTE FABRICANTE ##
+# FILTRO SOMENTE FABRICANTE
 
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_custo_medio_filial():
-    "Filtro fabricante e preço de custo médio"
+    """Filtro fabricante e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -74,7 +74,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_custo_medio_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_fabrica_filial():
-    "Filtro fabricante e preço de fábrica"
+    """Filtro fabricante e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -100,7 +100,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_fabrica_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_custo_filial():
-    "Filtro fabricante e preço de custo"
+    """Filtro fabricante e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -126,7 +126,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_custo_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_bruto_compra_filial():
-    "Filtro fabricante e preço bruto da ultima compra"
+    """Filtro fabricante e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -152,7 +152,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_bruto_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_liquido_compra_filial():
-    "Filtro fabricante e preço liquido da ultima compra"
+    """Filtro fabricante e preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -178,7 +178,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_liquido_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_nao_incluir_produtos_sem_compra_filial():
-    "Filtro fabricante e não incluir produtos sem compra"
+    """Filtro fabricante e não incluir produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -201,12 +201,12 @@ def test_rel_custo_medio_filtro_fabricante_nao_incluir_produtos_sem_compra_filia
     esperar_tempo(TEMPO_ESPERA)
 
 
-# FILTRO LINHA ##
+# FILTRO LINHA
 
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_custo_medio_filial():
-    "Filtro linha e por preço de custo médio"
+    """Filtro linha e por preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -232,7 +232,7 @@ def test_rel_custo_medio_filtro_linha_preco_custo_medio_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_fabrica_filial():
-    "Filtro linha e por preço de fábrica"
+    """Filtro linha e por preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -258,7 +258,7 @@ def test_rel_custo_medio_filtro_linha_preco_fabrica_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_custo_filial():
-    "Filtro linha e por preço de custo"
+    """Filtro linha e por preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -284,7 +284,7 @@ def test_rel_custo_medio_filtro_linha_preco_custo_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_bruto_compra_filial():
-    "Filtro linha e por preço bruto da ultima compra"
+    """Filtro linha e por preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -310,7 +310,7 @@ def test_rel_custo_medio_filtro_linha_preco_bruto_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_liquido_compra_filial():
-    "Filtro linha e por preço liquido da ultima compra"
+    """Filtro linha e por preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -337,7 +337,7 @@ def test_rel_custo_medio_filtro_linha_preco_liquido_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_linha
 def test_rel_custo_medio_filtro_linha_nao_incluir_produtos_sem_compra_filial():
-    "Filtro linhae não incluir produtos sem compra"
+    """Filtro linhae não incluir produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -361,12 +361,12 @@ def test_rel_custo_medio_filtro_linha_nao_incluir_produtos_sem_compra_filial():
     esperar_tempo(TEMPO_ESPERA)
 
 
-## FILTRO SEÇÃO ##
+# FILTRO SEÇÃO
 
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_custo_medio_filial():
-    "Filtro seção e preço de custo médio"
+    """Filtro seção e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -392,7 +392,7 @@ def test_rel_custo_medio_filtro_secao_preco_custo_medio_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_fabrica_filial():
-    "Filtro seção e preço de fábrica"
+    """Filtro seção e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -419,7 +419,7 @@ def test_rel_custo_medio_filtro_secao_preco_fabrica_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_custo_filial():
-    "Filtro seção e preço de custo"
+    """Filtro seção e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -445,7 +445,7 @@ def test_rel_custo_medio_filtro_secao_preco_custo_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_bruto_compra_filial():
-    "Filtro seção e preço bruto da ultima compra"
+    """Filtro seção e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -471,7 +471,7 @@ def test_rel_custo_medio_filtro_secao_preco_bruto_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_liquido_compra_filial():
-    "Filtro seção e preço liquido da ultima compra"
+    """Filtro seção e preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -498,7 +498,7 @@ def test_rel_custo_medio_filtro_secao_preco_liquido_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_secao
 def test_rel_custo_medio_filtro_secao_nao_incluir_produtos_sem_compra_filial():
-    "Filtro seção e não incluir produtos sem compra"
+    """Filtro seção e não incluir produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -522,12 +522,12 @@ def test_rel_custo_medio_filtro_secao_nao_incluir_produtos_sem_compra_filial():
     esperar_tempo(TEMPO_ESPERA)
 
 
-## FILTRO LISTA SNGPC ##
+# FILTRO LISTA SNGPC
 
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_medio_filial():
-    "Filtro lista sngpc e preço de custo médio"
+    """Filtro lista sngpc e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -553,7 +553,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_medio_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_fabrica_filial():
-    "Filtro lista sngpc e preço de fábrica"
+    """Filtro lista sngpc e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -580,7 +580,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_fabrica_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_filial():
-    "Filtro lista sngpc e preço de custo"
+    """Filtro lista sngpc e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -606,7 +606,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_bruto_compra_filial():
-    "Filtro lista sngpc e preço bruto da ultima compra"
+    """Filtro lista sngpc e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -632,7 +632,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_bruto_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_liquido_compra_filial():
-    "Filtro lista sngpc e preço liquido da ultima compra"
+    """Filtro lista sngpc e preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -659,7 +659,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_liquido_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_nao_incluir_produtos_sem_compra_filial():
-    "Filtro lista sngpc e não incluir produtos sem compra"
+    """Filtro lista sngpc e não incluir produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -683,12 +683,12 @@ def test_rel_custo_medio_filtro_lista_sngpc_nao_incluir_produtos_sem_compra_fili
     esperar_tempo(TEMPO_ESPERA)
 
 
-## FILTRO PRINCIPIO ATIVO ##
+# FILTRO PRINCIPIO ATIVO
 
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_custo_medio_filial():
-    "Filtro principio ativo e preço de custo médio"
+    """Filtro principio ativo e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -714,7 +714,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_custo_medio_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_fabrica_filial():
-    "Filtro principio ativo e preço de fábrica"
+    """Filtro principio ativo e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -741,7 +741,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_fabrica_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_custo_filial():
-    "Filtro principio ativo e preço de custo"
+    """Filtro principio ativo e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -767,7 +767,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_custo_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_bruto_compra_filial():
-    "Filtro principio ativo e preço bruto da ultima compra"
+    """Filtro principio ativo e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -793,7 +793,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_bruto_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_liquido_compra_filial():
-    "Filtro principio ativo e preço liquido da ultima compra"
+    """Filtro principio ativo e preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -820,7 +820,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_liquido_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_nao_incluir_produtos_sem_compra_filial():
-    "Filtro princpio ativo e não incluir sem produtos sem compra"
+    """Filtro princpio ativo e não incluir sem produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)

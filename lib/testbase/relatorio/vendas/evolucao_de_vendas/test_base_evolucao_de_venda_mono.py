@@ -1,4 +1,4 @@
-"Teste base relatório evolução de vendas com sistema mono"
+"""Teste base relatório evolução de vendas com sistema mono"""
 # pylint: disable=E0401
 
 
@@ -22,7 +22,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_evolucao_mono
 def test_rel_evolucao_vendas_mono():
-    "Teste sistema mono"
+    """Teste sistema mono"""
     login_sistema()
     digitar_nome_relatorio(COD_1)
     selecionar_periodo()

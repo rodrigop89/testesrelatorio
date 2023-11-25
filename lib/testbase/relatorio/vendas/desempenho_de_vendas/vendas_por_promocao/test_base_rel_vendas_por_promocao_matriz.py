@@ -1,6 +1,4 @@
-"Teste base para o relatório vendas por promoção sistema matriz"
-# pylint: disable=E0401
-# pylint: disable=R0801
+"""Teste base para o relatório vendas por promoção sistema matriz"""
 # pylint: disable=C0301
 
 
@@ -36,7 +34,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_vendas_promocao_matriz
 def test_rel_vendas_por_promocao_todas_promocoes_analitico_incluir_vendas_matriz():
-    "Filtro todas promoções, analitico e incluindo vendas sem promoção"
+    """Filtro todas promoções, analitico e incluindo vendas sem promoção"""
     login_sistema()
     digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
@@ -55,7 +53,7 @@ def test_rel_vendas_por_promocao_todas_promocoes_analitico_incluir_vendas_matriz
 
 @mark.emitir_rel_vendas_promocao_matriz
 def test_rel_vendas_por_promocao_todas_promocoes_analitico_sem_incluir_vendas_matriz_todas_empresas():
-    "Filtro todas promoções, analitico e retirando vendas sem promoção"
+    """Filtro todas promoções, analitico e retirando vendas sem promoção"""
     login_sistema()
     digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
@@ -75,7 +73,7 @@ def test_rel_vendas_por_promocao_todas_promocoes_analitico_sem_incluir_vendas_ma
 
 @mark.emitir_rel_vendas_promocao_matriz
 def test_rel_vendas_por_promocao_seleciona_promocao_analitico_incluir_vendas_matriz_todas_empresas():
-    "Filtro com uma promoção especifica, analitico e incluindo vendas sem promoção"
+    """Filtro com uma promoção especifica, analitico e incluindo vendas sem promoção"""
     login_sistema()
     digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
@@ -96,7 +94,7 @@ def test_rel_vendas_por_promocao_seleciona_promocao_analitico_incluir_vendas_mat
 
 @mark.emitir_rel_vendas_promocao_matriz
 def test_rel_vendas_por_promocao_seleciona_promocao_analitico_sem_incluir_vendas_matriz_todas_empresas():
-    "Filtro com uma promoção especifica, analitico e retirando vendas sem promoção"
+    """Filtro com uma promoção especifica, analitico e retirando vendas sem promoção"""
     login_sistema()
     digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
@@ -119,7 +117,7 @@ def test_rel_vendas_por_promocao_seleciona_promocao_analitico_sem_incluir_vendas
 
 @mark.emitir_rel_vendas_promocao_matriz
 def test_rel_vendas_por_promocao_todas_promocoes_sintetico_incluir_vendas_matriz_todas_empresas():
-    "Filtro todas promoções, sintetico e incluindo vendas sem promoção"
+    """Filtro todas promoções, sintetico e incluindo vendas sem promoção"""
     login_sistema()
     digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
@@ -138,7 +136,7 @@ def test_rel_vendas_por_promocao_todas_promocoes_sintetico_incluir_vendas_matriz
 
 @mark.emitir_rel_vendas_promocao_matriz
 def test_rel_vendas_por_promocao_todas_promocoes_sintetico_sem_incluir_vendas_matriz_todas_empresas():
-    "Filtro todas promoções, sintético e retirando vendas sem promoção"
+    """Filtro todas promoções, sintético e retirando vendas sem promoção"""
     login_sistema()
     digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
@@ -158,7 +156,7 @@ def test_rel_vendas_por_promocao_todas_promocoes_sintetico_sem_incluir_vendas_ma
 
 @mark.emitir_rel_vendas_promocao_matriz
 def test_rel_vendas_por_promocao_seleciona_promocao_sintetico_incluir_vendas_matriz_todas_empresas():
-    "Filtro com uma promoção especifica, sintetico e incluindo vendas sem promoção"
+    """Filtro com uma promoção especifica, sintetico e incluindo vendas sem promoção"""
     login_sistema()
     digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)
@@ -179,7 +177,7 @@ def test_rel_vendas_por_promocao_seleciona_promocao_sintetico_incluir_vendas_mat
 
 @mark.emitir_rel_vendas_promocao_matriz
 def test_rel_vendas_por_promocao_seleciona_promocao_sintetico_sem_incluir_vendas_matriz_todas_empresas():
-    "Filtro com uma promoção especifica, sintetico e retirando vendas sem promoção"
+    """Filtro com uma promoção especifica, sintetico e retirando vendas sem promoção"""
     login_sistema()
     digitar_nome_relatorio(COD_3)
     esperar_tempo(TEMPO_ESPERA)

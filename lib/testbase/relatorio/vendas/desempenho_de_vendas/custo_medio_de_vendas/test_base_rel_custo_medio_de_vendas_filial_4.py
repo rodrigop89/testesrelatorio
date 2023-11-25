@@ -39,12 +39,12 @@ from lib.formulario.vendas.desempenho_de_vendas.custo_medio_de_vendas.f_rel_cust
 )
 from lib.python.python_doc import esperar_tempo
 
-## FILTRO NCM ##
+# FILTRO NCM
 
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_custo_medio_filial():
-    "Filtro NCM e preço custo médio"
+    """Filtro NCM e preço custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -70,7 +70,7 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_medio_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_fabrica_filial():
-    "Filtro NCM e preço de fábrica"
+    """Filtro NCM e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -96,7 +96,7 @@ def test_rel_custo_medio_filtro_ncm_preco_fabrica_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_custo_filial():
-    "Filtro NCM e preço de custo"
+    """Filtro NCM e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -122,7 +122,7 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_filial():
-    "Filtro NCM e preço bruto da ultima compra"
+    """Filtro NCM e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -148,7 +148,7 @@ def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_liquido_filial():
-    "Filtro NCM e preço liquido ultima compra"
+    """Filtro NCM e preço liquido ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -174,7 +174,7 @@ def test_rel_custo_medio_filtro_ncm_preco_liquido_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
-    "Filtro NCM e não incluir produtos sem compras"
+    """Filtro NCM e não incluir produtos sem compras"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -197,12 +197,12 @@ def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
     esperar_tempo(TEMPO_ESPERA)
 
 
-## FILTRO CEST ##
+# FILTRO CEST
 
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_filial():
-    "Filtro código cest e preço de custo médio"
+    """Filtro código cest e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -228,7 +228,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_filial():
-    "Filtro código cest e preço de fábrica"
+    """Filtro código cest e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -254,7 +254,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_custo_filial():
-    "Filtro código cest e preço de custo"
+    """Filtro código cest e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -280,7 +280,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_filial():
-    "Filtro código cest e preço bruto da ultima compra"
+    """Filtro código cest e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -306,7 +306,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_filial():
-    "Filtro código cest e preço líquido da ultima compra"
+    """Filtro código cest e preço líquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)
@@ -332,7 +332,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_filial():
 
 @mark.emitir_rel_custo_medio_vendas_filial_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_nao_incluir_produto_sem_compra():
-    "Filtro código cest e não incluir produto na compra"
+    """Filtro código cest e não incluir produto na compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_empresas(LOJA)

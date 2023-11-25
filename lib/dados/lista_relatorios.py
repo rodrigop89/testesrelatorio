@@ -1,4 +1,4 @@
-"Lista com os códigos dos relatórios"
+"""Lista com os códigos dos relatórios"""
 # pylint: disable=E0401
 # pylint: disable=C0303
 

@@ -1,4 +1,4 @@
-"Teste base relatório evolução de vendas com sistema matriz"
+"""Teste base relatório evolução de vendas com sistema matriz"""
 # pylint: disable=E0401
 
 
@@ -23,7 +23,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_evolucao_matriz
 def test_rel_evolucao_vendas_matriz():
-    "Teste sistema matriz"
+    """Teste sistema matriz"""
     login_sistema()
     digitar_nome_relatorio(COD_1)
     selecionar_todas_empresas()

@@ -1,4 +1,4 @@
-""""Teste base para o relatório Vendas Por Cartão sistema Matriz"""
+"""Teste base para o relatório Vendas Por Cartão sistema Matriz"""
 
 from pytest import mark
 from lib.dados.lista_relatorios import COD_7
@@ -30,7 +30,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_vendas_por_cartao_matriz_filtro_todos_cartoes
 def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_venda_matriz():
-    "Filtro todos cartões e ordando por vendas"
+    """Filtro todos cartões e ordando por vendas"""
     login_sistema()
     digitar_nome_relatorio(COD_7)
     selecionar_todas_empresas()
@@ -50,7 +50,7 @@ def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_venda_matriz():
 
 @mark.emitir_rel_vendas_por_cartao_matriz_filtro_todos_cartoes
 def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_linha_matriz():
-    "Filtro todos cartões e ordenado por linha"
+    """Filtro todos cartões e ordenado por linha"""
     login_sistema()
     digitar_nome_relatorio(COD_7)
     selecionar_todas_empresas()
@@ -70,7 +70,7 @@ def test_rel_vendas_por_cartao_todos_cartoes_ordenar_por_linha_matriz():
 
 @mark.emitir_rel_vendas_por_cartao_matriz_filtro_cartao_especifico
 def test_rel_vendas_por_cartao_especifico_ordenar_por_venda_matriz():
-    "Filtro cartão específico e ordenado por vendas"
+    """Filtro cartão específico e ordenado por vendas"""
     login_sistema()
     digitar_nome_relatorio(COD_7)
     selecionar_todas_empresas()
@@ -90,7 +90,7 @@ def test_rel_vendas_por_cartao_especifico_ordenar_por_venda_matriz():
 
 @mark.emitir_rel_vendas_por_cartao_matriz_filtro_cartao_especifico
 def test_rel_vendas_por_carta_especifico_ordernar_por_linha_matriz():
-    "Filtro cartão específico  ordenado por linha"
+    """Filtro cartão específico  ordenado por linha"""
     login_sistema()
     digitar_nome_relatorio(COD_7)
     selecionar_todas_empresas()

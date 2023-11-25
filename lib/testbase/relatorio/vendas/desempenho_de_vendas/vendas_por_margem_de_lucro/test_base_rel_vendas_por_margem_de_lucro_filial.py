@@ -1,4 +1,4 @@
-"Teste base para o relatório vendas por margem de lucro sistema filial"
+"""Teste base para o relatório vendas por margem de lucro sistema filial"""
 # pylint: disable=C0301
 
 from pytest import mark
@@ -33,7 +33,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_vendas_margem_lucro_filial
 def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_filial():
-    "Filtro todas as margens de lucro com impressão analitico"
+    """Filtro todas as margens de lucro com impressão analitico"""
     login_sistema()
     digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
@@ -52,7 +52,7 @@ def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_filial():
 
 @mark.emitir_rel_vendas_margem_lucro_filial
 def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_filial():
-    "Filtro todas as margens de lucro com impressão sintético"
+    """Filtro todas as margens de lucro com impressão sintético"""
     login_sistema()
     digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
@@ -71,7 +71,7 @@ def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_filial():
 
 @mark.emitir_rel_vendas_margem_lucro_filial
 def test_rel_vendas_por_margem_lucro_seleciona_margem_analitico_filial():
-    "Filtro magrem de lucro específica com impressão analitico"
+    """Filtro magrem de lucro específica com impressão analitico"""
     login_sistema()
     digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
@@ -92,7 +92,7 @@ def test_rel_vendas_por_margem_lucro_seleciona_margem_analitico_filial():
 
 @mark.emitir_rel_vendas_margem_lucro_filial
 def test_rel_vendas_por_margem_lucro_seleciona_margem_sintetico_filial():
-    "Filtro magrem de lucro específica com impressão sintético"
+    """Filtro magrem de lucro específica com impressão sintético"""
     login_sistema()
     digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)

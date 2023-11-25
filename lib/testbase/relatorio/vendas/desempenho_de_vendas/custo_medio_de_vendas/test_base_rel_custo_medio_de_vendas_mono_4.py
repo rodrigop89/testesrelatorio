@@ -42,7 +42,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_custo_medio_mono():
-    "Filtro NCM e preço custo médio"
+    """Filtro NCM e preço custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -67,7 +67,7 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_medio_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_fabrica_mono():
-    "Filtro NCM e preço de fábrica"
+    """Filtro NCM e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -92,7 +92,7 @@ def test_rel_custo_medio_filtro_ncm_preco_fabrica_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_custo_mono():
-    "Filtro NCM e preço de custo"
+    """Filtro NCM e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -117,7 +117,7 @@ def test_rel_custo_medio_filtro_ncm_preco_custo_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_mono():
-    "Filtro NCM e preço bruto da ultima compra"
+    """Filtro NCM e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -142,7 +142,7 @@ def test_rel_custo_medio_filtro_ncm_preco_bruto_compra_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_preco_liquido_mono():
-    "Filtro NCM e preço liquido ultima compra"
+    """Filtro NCM e preço liquido ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -167,7 +167,7 @@ def test_rel_custo_medio_filtro_ncm_preco_liquido_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_ncm
 def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
-    "Filtro NCM e não incluir produtos sem compras"
+    """Filtro NCM e não incluir produtos sem compras"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -194,7 +194,7 @@ def test_rel_custo_medio_filtro_ncm_nao_incluir_produto_sem_compra():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_mono():
-    "Filtro código cest e preço de custo médio"
+    """Filtro código cest e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -219,7 +219,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_medio_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_mono():
-    "Filtro código cest e preço de fábrica"
+    """Filtro código cest e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -244,7 +244,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_fabrica_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_custo_mono():
-    "Filtro código cest e preço de custo"
+    """Filtro código cest e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -269,7 +269,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_custo_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_mono():
-    "Filtro código cest e preço bruto da ultima compra"
+    """Filtro código cest e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -294,7 +294,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_compra_compra_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_mono():
-    "Filtro código cest e preço líquido da ultima compra"
+    """Filtro código cest e preço líquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)
@@ -319,7 +319,7 @@ def test_rel_custo_medio_filtro_codigo_cest_preco_liquido_compra_mono():
 
 @mark.emitir_rel_custo_medio_vendas_mono_filtro_codigo_cest
 def test_rel_custo_medio_filtro_codigo_cest_nao_incluir_produto_sem_compra():
-    "Filtro código cest e não incluir produto na compra"
+    """Filtro código cest e não incluir produto na compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     esperar_tempo(TEMPO_ESPERA)

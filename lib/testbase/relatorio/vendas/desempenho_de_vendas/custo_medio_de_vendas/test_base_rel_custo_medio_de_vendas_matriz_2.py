@@ -47,7 +47,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_custo_medio_matriz():
-    "Filtro fabricante e preço de custo médio"
+    """Filtro fabricante e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -73,7 +73,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_custo_medio_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_fabrica_matriz():
-    "Filtro fabricante e preço de fábrica"
+    """Filtro fabricante e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -99,7 +99,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_fabrica_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_custo_matriz():
-    "Filtro fabricante e preço de custo"
+    """Filtro fabricante e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -125,7 +125,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_custo_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_bruto_compra_matriz():
-    "Filtro fabricante e preço bruto da ultima compra"
+    """Filtro fabricante e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -151,7 +151,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_bruto_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_preco_liquido_compra_matriz():
-    "Filtro fabricante e preço liquido da ultima compra"
+    """Filtro fabricante e preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -177,7 +177,7 @@ def test_rel_custo_medio_filtro_fabricante_preco_liquido_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_fabricante
 def test_rel_custo_medio_filtro_fabricante_nao_incluir_produtos_sem_compra_matriz():
-    "Filtro fabricante e não incluir produtos sem compra"
+    """Filtro fabricante e não incluir produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -205,7 +205,7 @@ def test_rel_custo_medio_filtro_fabricante_nao_incluir_produtos_sem_compra_matri
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_custo_medio_matriz():
-    "Filtro linha e por preço de custo médio"
+    """Filtro linha e por preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -231,7 +231,7 @@ def test_rel_custo_medio_filtro_linha_preco_custo_medio_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_fabrica_matriz():
-    "Filtro linha e por preço de fábrica"
+    """Filtro linha e por preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -257,7 +257,7 @@ def test_rel_custo_medio_filtro_linha_preco_fabrica_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_custo_matriz():
-    "Filtro linha e por preço de custo"
+    """Filtro linha e por preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -283,7 +283,7 @@ def test_rel_custo_medio_filtro_linha_preco_custo_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_bruto_compra_matriz():
-    "Filtro linha e por preço bruto da ultima compra"
+    """Filtro linha e por preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -309,7 +309,7 @@ def test_rel_custo_medio_filtro_linha_preco_bruto_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_linha
 def test_rel_custo_medio_filtro_linha_preco_liquido_compra_matriz():
-    "Filtro linha e por preço liquido da ultima compra"
+    """Filtro linha e por preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -336,7 +336,7 @@ def test_rel_custo_medio_filtro_linha_preco_liquido_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_linha
 def test_rel_custo_medio_filtro_linha_nao_incluir_produtos_sem_compra_matriz():
-    "Filtro linhae não incluir produtos sem compra"
+    """Filtro linhae não incluir produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -365,7 +365,7 @@ def test_rel_custo_medio_filtro_linha_nao_incluir_produtos_sem_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_custo_medio_matriz():
-    "Filtro seção e preço de custo médio"
+    """Filtro seção e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -391,7 +391,7 @@ def test_rel_custo_medio_filtro_secao_preco_custo_medio_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_fabrica_matriz():
-    "Filtro seção e preço de fábrica"
+    """Filtro seção e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -418,7 +418,7 @@ def test_rel_custo_medio_filtro_secao_preco_fabrica_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_custo_matriz():
-    "Filtro seção e preço de custo"
+    """Filtro seção e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -444,7 +444,7 @@ def test_rel_custo_medio_filtro_secao_preco_custo_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_bruto_compra_matriz():
-    "Filtro seção e preço bruto da ultima compra"
+    """Filtro seção e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -470,7 +470,7 @@ def test_rel_custo_medio_filtro_secao_preco_bruto_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_secao
 def test_rel_custo_medio_filtro_secao_preco_liquido_compra_matriz():
-    "Filtro seção e preço liquido da ultima compra"
+    """Filtro seção e preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -497,7 +497,7 @@ def test_rel_custo_medio_filtro_secao_preco_liquido_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_secao
 def test_rel_custo_medio_filtro_secao_nao_incluir_produtos_sem_compra_matriz():
-    "Filtro seção e não incluir produtos sem compra"
+    """Filtro seção e não incluir produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -526,7 +526,7 @@ def test_rel_custo_medio_filtro_secao_nao_incluir_produtos_sem_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_medio_matriz():
-    "Filtro lista sngpc e preço de custo médio"
+    """Filtro lista sngpc e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -552,7 +552,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_medio_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_fabrica_matriz():
-    "Filtro lista sngpc e preço de fábrica"
+    """Filtro lista sngpc e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -579,7 +579,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_fabrica_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_matriz():
-    "Filtro lista sngpc e preço de custo"
+    """Filtro lista sngpc e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -605,7 +605,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_custo_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_bruto_compra_matriz():
-    "Filtro lista sngpc e preço bruto da ultima compra"
+    """Filtro lista sngpc e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -631,7 +631,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_bruto_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_preco_liquido_compra_matriz():
-    "Filtro lista sngpc e preço liquido da ultima compra"
+    """Filtro lista sngpc e preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -658,7 +658,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_preco_liquido_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_lista_sngpc
 def test_rel_custo_medio_filtro_lista_sngpc_nao_incluir_produtos_sem_compra_matriz():
-    "Filtro lista sngpc e não incluir produtos sem compra"
+    """Filtro lista sngpc e não incluir produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -687,7 +687,7 @@ def test_rel_custo_medio_filtro_lista_sngpc_nao_incluir_produtos_sem_compra_matr
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_custo_medio_matriz():
-    "Filtro principio ativo e preço de custo médio"
+    """Filtro principio ativo e preço de custo médio"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -713,7 +713,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_custo_medio_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_fabrica_matriz():
-    "Filtro principio ativo e preço de fábrica"
+    """Filtro principio ativo e preço de fábrica"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -740,7 +740,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_fabrica_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_custo_matriz():
-    "Filtro principio ativo e preço de custo"
+    """Filtro principio ativo e preço de custo"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -766,7 +766,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_custo_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_bruto_compra_matriz():
-    "Filtro principio ativo e preço bruto da ultima compra"
+    """Filtro principio ativo e preço bruto da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -792,7 +792,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_bruto_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_preco_liquido_compra_matriz():
-    "Filtro principio ativo e preço liquido da ultima compra"
+    """Filtro principio ativo e preço liquido da ultima compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()
@@ -819,7 +819,7 @@ def test_rel_custo_medio_filtro_principio_ativo_preco_liquido_compra_matriz():
 
 @mark.emitir_rel_custo_medio_vendas_matriz_filtro_principio_ativo
 def test_rel_custo_medio_filtro_principio_ativo_nao_incluir_produtos_sem_compra_matriz():
-    "Filtro princpio ativo e não incluir sem produtos sem compra"
+    """Filtro princpio ativo e não incluir sem produtos sem compra"""
     login_sistema()
     digitar_nome_relatorio(COD_4)
     selecionar_todas_empresas()

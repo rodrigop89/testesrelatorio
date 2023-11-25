@@ -1,4 +1,4 @@
-"Teste base para o relatório Vendas por PBM utilizando sistema mono"
+"""Teste base para o relatório Vendas por PBM utilizando sistema mono"""
 
 from pytest import mark
 from lib.dados.dados_sistema import (
@@ -36,7 +36,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_vendas_por_pbm_todos_mono
 def test_rel_vendas_por_pbm_todos_pbms_analitico_mono():
-    "Filtro todos PBMs de forma analitica"
+    """Filtro todos PBMs de forma analitica"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     esperar_tempo(TEMPO_ESPERA)
@@ -55,7 +55,7 @@ def test_rel_vendas_por_pbm_todos_pbms_analitico_mono():
 
 @mark.emitir_rel_vendas_por_pbm_todos_mono
 def test_rel_vendas_por_pbm_todos_pbms_analitico_apresenta_informacoes_adicionais_mono():
-    "Filtro todos PBMs de forma analitica com informações adicionais da venda"
+    """Filtro todos PBMs de forma analitica com informações adicionais da venda"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     esperar_tempo(TEMPO_ESPERA)
@@ -75,7 +75,7 @@ def test_rel_vendas_por_pbm_todos_pbms_analitico_apresenta_informacoes_adicionai
 
 @mark.emitir_rel_vendas_por_pbm_todos_mono
 def test_rel_vendas_por_pbm_todos_pbms_sintetico_mono():
-    "Filtro todos PBMs de forma sintética"
+    """Filtro todos PBMs de forma sintética"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     esperar_tempo(TEMPO_ESPERA)
@@ -97,7 +97,7 @@ def test_rel_vendas_por_pbm_todos_pbms_sintetico_mono():
 
 @mark.emitir_rel_vendas_por_pbm_especifico_mono
 def test_rel_vendas_por_pbm_especifico_analitico_mono():
-    "Filtro PBM específico de forma analitica"
+    """Filtro PBM específico de forma analitica"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     esperar_tempo(TEMPO_ESPERA)
@@ -116,7 +116,7 @@ def test_rel_vendas_por_pbm_especifico_analitico_mono():
 
 @mark.emitir_rel_vendas_por_pbm_especifico_mono
 def test_rel_vendas_por_pbm_especifico_analitico_apresenta_informacoes_adicionais_mono():
-    "Filtro PBM específico de forma analitica com informacoes adicionais"
+    """Filtro PBM específico de forma analitica com informacoes adicionais"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     esperar_tempo(TEMPO_ESPERA)
@@ -136,7 +136,7 @@ def test_rel_vendas_por_pbm_especifico_analitico_apresenta_informacoes_adicionai
 
 @mark.emitir_rel_vendas_por_pbm_especifico_mono
 def test_rel_vendas_por_pbm_especifico_sintetico_mono():
-    "Filtro PBM específico de forma sintético"
+    """Filtro PBM específico de forma sintético"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     esperar_tempo(TEMPO_ESPERA)

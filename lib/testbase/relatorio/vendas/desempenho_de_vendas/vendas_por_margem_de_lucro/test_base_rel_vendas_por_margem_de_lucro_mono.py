@@ -1,4 +1,4 @@
-"Teste base para o relatório vendas por margem de lucro sistema mono"
+"""Teste base para o relatório vendas por margem de lucro sistema mono"""
 # pylint: disable=C0301
 
 from pytest import mark
@@ -31,7 +31,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_vendas_margem_lucro_mono
 def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_mono():
-    "Filtro todas as margens de lucro com impressão analitico"
+    """Filtro todas as margens de lucro com impressão analitico"""
     login_sistema()
     digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
@@ -49,7 +49,7 @@ def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_analitico_mono():
 
 @mark.emitir_rel_vendas_margem_lucro_mono
 def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_mono():
-    "Filtro todas as margens de lucro com impressão sintético"
+    """Filtro todas as margens de lucro com impressão sintético"""
     login_sistema()
     digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
@@ -67,7 +67,7 @@ def test_rel_vendas_por_margem_lucro_todas_margens_de_lucro_sintetico_mono():
 
 @mark.emitir_rel_vendas_margem_lucro_mono
 def test_rel_vendas_por_margem_lucro_seleciona_margem_analitico_mono():
-    "Filtro magrem de lucro específica com impressão analitico"
+    """Filtro magrem de lucro específica com impressão analitico"""
     login_sistema()
     digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)
@@ -87,7 +87,7 @@ def test_rel_vendas_por_margem_lucro_seleciona_margem_analitico_mono():
 
 @mark.emitir_rel_vendas_margem_lucro_mono
 def test_rel_vendas_por_margem_lucro_seleciona_margem_sintetico_mono():
-    "Filtro magrem de lucro específica com impressão sintético"
+    """Filtro magrem de lucro específica com impressão sintético"""
     login_sistema()
     digitar_nome_relatorio(COD_5)
     esperar_tempo(TEMPO_ESPERA)

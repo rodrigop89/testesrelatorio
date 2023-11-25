@@ -1,4 +1,4 @@
-"Teste base para o relatório Vendas com Produtos Devolvidos sistema filial"
+"""Teste base para o relatório Vendas com Produtos Devolvidos sistema filial"""
 from pytest import mark
 from lib.dados.dados_sistema import LOJA
 from lib.dados.lista_relatorios import COD_9
@@ -31,7 +31,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_vendas_com_produtos_devolvidos_filial
 def test_rel_vendas_com_produtos_devolvidos_periodo_devolucao_filial():
-    "Filtro por período devolução"
+    """Filtro por período devolução"""
     login_sistema()
     digitar_nome_relatorio(COD_9)
     selecionar_empresas(LOJA)
@@ -50,7 +50,7 @@ def test_rel_vendas_com_produtos_devolvidos_periodo_devolucao_filial():
 
 @mark.emitir_rel_vendas_com_produtos_devolvidos_filial
 def test_rel_vendas_com_produtos_devolvidos_periodo_vendas_filial():
-    "Filtro por vendas"
+    """Filtro por vendas"""
     login_sistema()
     digitar_nome_relatorio(COD_9)
     selecionar_empresas(LOJA)

@@ -1,4 +1,4 @@
-"Formulário Relatório Vendas por Cartão"
+"""Formulário Relatório Vendas por Cartão"""
 import pyautogui
 
 from lib.dados.teclado import (
@@ -13,12 +13,12 @@ from lib.python.python_doc import esperar_tempo
 
 
 def selecionar_todos_cartoes():
-    "Filtro todos os cartões"
+    """Filtro todos os cartões"""
     pyautogui.hotkey(ALT, O)
 
 
 def selecionar_cartao():
-    "Filtro cartão específico"
+    """Filtro cartão específico"""
     pyautogui.hotkey(ALT, C)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)

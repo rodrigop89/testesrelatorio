@@ -1,4 +1,4 @@
-"Teste base relatório vendas cancaladas com sistema matriz"
+"""Teste base relatório vendas cancaladas com sistema matriz"""
 
 from pytest import mark
 from lib.dados.sistema import (
@@ -25,7 +25,7 @@ from lib.formulario.vendas.desempenho_de_vendas.vendas_canceladas.f_rel_vendas_c
 
 @mark.emitir_rel_vendas_canceladas_matriz
 def test_rel_vendas_canceladas_analitico_cancelamento_matriz():
-    "Filtro analitico por periodo de cancelamento"
+    """Filtro analitico por periodo de cancelamento"""
     login_sistema()
     digitar_nome_relatorio(COD_8)
     selecionar_todas_empresas()
@@ -41,7 +41,7 @@ def test_rel_vendas_canceladas_analitico_cancelamento_matriz():
 
 @mark.emitir_rel_vendas_canceladas_matriz
 def test_rel_vendas_canceladas_analitico_vendas_matriz():
-    "Filtro analitico por periodo de vendas"
+    """Filtro analitico por periodo de vendas"""
     login_sistema()
     digitar_nome_relatorio(COD_8)
     selecionar_todas_empresas()
@@ -57,7 +57,7 @@ def test_rel_vendas_canceladas_analitico_vendas_matriz():
 
 @mark.emitir_rel_vendas_canceladas_matriz
 def test_rel_vendas_canceladas_sintetico_cancelamento_matriz():
-    "Filtro sintetico por periodo de cancelamento"
+    """Filtro sintetico por periodo de cancelamento"""
     login_sistema()
     digitar_nome_relatorio(COD_8)
     selecionar_todas_empresas()
@@ -73,7 +73,7 @@ def test_rel_vendas_canceladas_sintetico_cancelamento_matriz():
 
 @mark.emitir_rel_vendas_canceladas_matriz
 def test_rel_vendas_canceladas_sintetico_venda_matriz():
-    "Filtro sintetico por periodo de vendas"
+    """Filtro sintetico por periodo de vendas"""
     login_sistema()
     digitar_nome_relatorio(COD_8)
     selecionar_todas_empresas()

@@ -1,4 +1,4 @@
-"Teste base para o relatório Vendas por PBM utilizando sistema matriz"
+"""Teste base para o relatório Vendas por PBM utilizando sistema matriz"""
 
 from pytest import mark
 from lib.dados.dados_sistema import (
@@ -37,7 +37,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_vendas_por_pbm_todos_matriz
 def test_rel_vendas_por_pbm_todos_pbms_analitico_matriz():
-    "Filtro todos PBMs de forma analitica"
+    """Filtro todos PBMs de forma analitica"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
@@ -57,7 +57,7 @@ def test_rel_vendas_por_pbm_todos_pbms_analitico_matriz():
 
 @mark.emitir_rel_vendas_por_pbm_todos_matriz
 def test_rel_vendas_por_pbm_todos_pbms_analitico_apresenta_informacoes_adicionais_matriz():
-    "Filtro todos PBMs de forma analitica com informações adicionais da venda"
+    """Filtro todos PBMs de forma analitica com informações adicionais da venda"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
@@ -78,7 +78,7 @@ def test_rel_vendas_por_pbm_todos_pbms_analitico_apresenta_informacoes_adicionai
 
 @mark.emitir_rel_vendas_por_pbm_todos_matriz
 def test_rel_vendas_por_pbm_todos_pbms_sintetico_matriz():
-    "Filtro todos PBMs de forma sintética"
+    """Filtro todos PBMs de forma sintética"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
@@ -101,7 +101,7 @@ def test_rel_vendas_por_pbm_todos_pbms_sintetico_matriz():
 
 @mark.emitir_rel_vendas_por_pbm_especifico_matriz
 def test_rel_vendas_por_pbm_especifico_analitico_matriz():
-    "Filtro PBM específico de forma analitica"
+    """Filtro PBM específico de forma analitica"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
@@ -121,7 +121,7 @@ def test_rel_vendas_por_pbm_especifico_analitico_matriz():
 
 @mark.emitir_rel_vendas_por_pbm_especifico_matriz
 def test_rel_vendas_por_pbm_especifico_analitico_apresenta_informacoes_adicionais_matriz():
-    "Filtro PBM específico de forma analitica com informacoes adicionais"
+    """Filtro PBM específico de forma analitica com informacoes adicionais"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()
@@ -142,7 +142,7 @@ def test_rel_vendas_por_pbm_especifico_analitico_apresenta_informacoes_adicionai
 
 @mark.emitir_rel_vendas_por_pbm_especifico_matriz
 def test_rel_vendas_por_pbm_especifico_sintetico_matriz():
-    "Filtro PBM específico de forma sintético"
+    """Filtro PBM específico de forma sintético"""
     login_sistema()
     digitar_nome_relatorio(COD_6)
     selecionar_todas_empresas()

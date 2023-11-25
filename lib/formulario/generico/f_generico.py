@@ -1,4 +1,4 @@
-"Formulario genérico"
+"""Formulario genérico"""
 # pylint: disable=E0401
 import time
 
@@ -43,6 +43,7 @@ from lib.dados.teclado import (
     V,
     W,
 )
+
 from lib.dados.tempo import (
     TEMPO_ESPERA,
     TEMPO_IMPRESSAO,
@@ -51,12 +52,12 @@ from lib.python.python_doc import esperar_tempo
 
 
 def selecionar_todas_empresas():
-    "Atalho selecionar todas as empresas"
+    """Atalho selecionar todas as empresas"""
     pyautogui.hotkey(ALT, T)
 
 
 def selecionar_empresas(texto):
-    "Atalho selecionar o sistema filial"
+    """Atalho selecionar o sistema filial"""
     pyautogui.hotkey(ALT, E)
     pyautogui.press(F4)
     esperar_tempo(TEMPO_ESPERA)
@@ -67,79 +68,79 @@ def selecionar_empresas(texto):
 
 
 def selecionar_analitico():
-    "Emitir analitico e periodo cancelamento"
+    """Emitir analitico e periodo cancelamento"""
     pyautogui.hotkey(ALT, A)
 
 
 def selecionar_sintetico():
-    "Emitir analitico e periodo cancelamento"
+    """Emitir analitico e periodo cancelamento"""
     pyautogui.hotkey(ALT, S)
 
 
 def selecionar_periodo():
-    "Atalho selecionar o campo do período"
+    """Atalho selecionar o campo do período"""
     pyautogui.hotkey(ALT, D)
 
 
 def informar_periodo_apenas_mes_e_ano():
-    "Digitar apenas o mes e ano"
+    """Digitar apenas o mes e ano"""
     periodo(MES_ANO)
 
 
 def informar_periodo():
-    "Digitar o período no relatório"
+    """Digitar o período no relatório"""
     periodo(PERIODO_INICIAL)
     dar_tab()
     periodo(PERIODO_FINAL)
 
 
 def dar_tab():
-    "Dar tab nos campos"
+    """Dar tab nos campos"""
     pyautogui.press(TAB)
 
 
 def apertar_enter():
-    "Apertar Enter nos campos"
+    """Apertar Enter nos campos"""
     pyautogui.press(ENTER)
 
 
 def confirmar_selecao():
-    "Confirmar filtros selecionados"
+    """Confirmar filtros selecionados"""
     pyautogui.hotkey(ALT, C)
 
 
 def imprimir_relatorio():
-    "Imprimir o relatório"
+    """Imprimir o relatório"""
     pyautogui.hotkey(ALT, I)
     esperar_tempo(TEMPO_IMPRESSAO)
 
 
 def gerar_planilha():
-    "Gerar planilha excel"
+    """Gerar planilha excel"""
     pyautogui.hotkey(ALT, G)
     esperar_tempo(TEMPO_IMPRESSAO)
 
 
 def fechar_aba_impressao():
-    "Fechar aba de impressão no navegador"
+    """Fechar aba de impressão no navegador"""
     pyautogui.hotkey(CTRL, SHIFT, W)
     time.sleep(3)
 
 
 def sair_relatorio():
-    "Sair do relatório selecionado"
+    """Sair do relatório selecionado"""
     pyautogui.hotkey(ALT, R)
     time.sleep(2)
 
 
 def fechar_sistema_relatorio():
-    "Fechar sistema de relatórios"
+    """Fechar sistema de relatórios"""
     pyautogui.hotkey(ALT, F4)
     pyautogui.press(ENTER)
 
 
 def selecionar_produto_especifico():
-    "Selecionar a opção para informar um produto especifico"
+    """Selecionar a opção para informar um produto especifico"""
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.hotkey(ALT, D)
     pyautogui.hotkey(ALT, P)
@@ -155,12 +156,12 @@ def selecionar_produto_especifico():
 
 
 def selecionar_demais_filtros():
-    "Selecionar demais filtros"
+    """Selecionar demais filtros"""
     pyautogui.hotkey(ALT, D)
 
 
 def selecionar_fabricante():
-    "Filtro por fabricante"
+    """Filtro por fabricante"""
     pyautogui.hotkey(ALT, F)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -168,7 +169,7 @@ def selecionar_fabricante():
 
 
 def selecionar_linha():
-    "Filtro por linha"
+    """Filtro por linha"""
     pyautogui.hotkey(ALT, H)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -176,7 +177,8 @@ def selecionar_linha():
 
 
 def selecionar_linha_alternativo():
-    "Filtro por linha utilizando outro comando diferente existente em alguns relatórios"
+    """Filtro por linha utilizando outro comando diferente 
+    existente em alguns relatórios"""
     pyautogui.hotkey(ALT, L)  # Atalho diferente
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -184,7 +186,7 @@ def selecionar_linha_alternativo():
 
 
 def selecionar_secao():
-    "Filtro por seção"
+    """Filtro por seção"""
     pyautogui.hotkey(ALT, S)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -192,7 +194,7 @@ def selecionar_secao():
 
 
 def selecionar_lista_sngpc():
-    "Filtro por lista SNGPC"
+    """Filtro por lista SNGPC"""
     pyautogui.hotkey(ALT, L)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -200,7 +202,7 @@ def selecionar_lista_sngpc():
 
 
 def selecionar_principio_ativo():
-    "Filtro por principio ativo"
+    """Filtro por principio ativo"""
     pyautogui.hotkey(ALT, A)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -208,7 +210,7 @@ def selecionar_principio_ativo():
 
 
 def selecionar_categoria():
-    "Filtro por categoria"
+    """Filtro por categoria"""
     pyautogui.hotkey(ALT, T)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -216,7 +218,7 @@ def selecionar_categoria():
 
 
 def selecionar_margem_lucro():
-    "Filtro por margem de lucro"
+    """Filtro por margem de lucro"""
     pyautogui.hotkey(ALT, M)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -224,7 +226,7 @@ def selecionar_margem_lucro():
 
 
 def selecionar_grupo_produto():
-    "Filtro por grupo de produtos"
+    """Filtro por grupo de produtos"""
     pyautogui.hotkey(ALT, G)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -232,7 +234,7 @@ def selecionar_grupo_produto():
 
 
 def selecionar_grupo_comissao():
-    "Filtro por grupo de comissão"
+    """Filtro por grupo de comissão"""
     pyautogui.hotkey(ALT, O)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -240,7 +242,7 @@ def selecionar_grupo_comissao():
 
 
 def selecionar_grupo_remarcacao():
-    "Filtro por grupo de remarcação de preços"
+    """Filtro por grupo de remarcação de preços"""
     pyautogui.hotkey(ALT, R)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.press(SPACE)
@@ -248,26 +250,26 @@ def selecionar_grupo_remarcacao():
 
 
 def selecionar_grupo_icms():
-    "Filtro por grupo de icms"
+    """Filtro por grupo de icms"""
     pyautogui.hotkey(ALT, I)
     pyautogui.press(SPACE)
     pyautogui.press(ENTER)
 
 
 def selecionar_codigo_ncm():
-    "Filtro por código NCM"
+    """Filtro por código NCM"""
     pyautogui.hotkey(ALT, N)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.write(NCM)
 
 
 def selecionar_codigo_cest():
-    "Filtro por código CEST"
+    """Filtro por código CEST"""
     pyautogui.hotkey(ALT, E)
     esperar_tempo(TEMPO_ESPERA)
     pyautogui.typewrite(CEST)
 
 
 def selecionar_opcao_vendas():
-    "Filtro por Vendas"
+    """Filtro por Vendas"""
     pyautogui.hotkey(ALT, V)

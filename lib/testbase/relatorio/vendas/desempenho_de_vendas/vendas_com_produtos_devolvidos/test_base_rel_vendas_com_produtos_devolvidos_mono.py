@@ -1,4 +1,4 @@
-"Teste base para o relatório Vendas com Produtos Devolvidos sistema mono"
+"""Teste base para o relatório Vendas com Produtos Devolvidos sistema mono"""
 from pytest import mark
 from lib.dados.lista_relatorios import COD_9
 
@@ -29,7 +29,7 @@ from lib.python.python_doc import esperar_tempo
 
 @mark.emitir_rel_vendas_com_produtos_devolvidos_mono
 def test_rel_vendas_com_produtos_devolvidos_periodo_devolucao_mono():
-    "Filtro por período devolução"
+    """Filtro por período devolução"""
     login_sistema()
     digitar_nome_relatorio(COD_9)
     esperar_tempo(TEMPO_ESPERA)
@@ -47,7 +47,7 @@ def test_rel_vendas_com_produtos_devolvidos_periodo_devolucao_mono():
 
 @mark.emitir_rel_vendas_com_produtos_devolvidos_mono
 def test_rel_vendas_com_produtos_devolvidos_periodo_vendas_mono():
-    "Filtro por vendas"
+    """Filtro por vendas"""
     login_sistema()
     digitar_nome_relatorio(COD_9)
     esperar_tempo(TEMPO_ESPERA)
