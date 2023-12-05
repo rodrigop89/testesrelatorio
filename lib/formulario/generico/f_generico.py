@@ -177,7 +177,7 @@ def selecionar_linha():
 
 
 def selecionar_linha_alternativo():
-    """Filtro por linha utilizando outro comando diferente 
+    """Filtro por linha utilizando outro comando diferente
     existente em alguns relatórios"""
     pyautogui.hotkey(ALT, L)  # Atalho diferente
     esperar_tempo(TEMPO_ESPERA)

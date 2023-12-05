@@ -28,7 +28,7 @@ def seleciona_todos_pbms():
 
 
 def seleciona_opcao_apresentar_informaceos_adicionais():
-    """Seleciona a opção de apresentar 
+    """Seleciona a opção de apresentar
     informações adicionais da venda"""
     pyautogui.press(TAB)
     pyautogui.press(SPACE)
