@@ -4,6 +4,7 @@ import pyautogui
 
 from lib.dados.teclado import (
     ALT,
+    ENTER,
     NUM_1,
     NUM_2,
     NUM_3,
@@ -16,7 +17,10 @@ from lib.dados.teclado import (
     P,
     L,
     S,
+    SPACE,
 )
+from lib.dados.tempo import TEMPO_ESPERA
+from lib.python.python_doc import esperar_tempo
 
 # PRODUTO
 
@@ -39,9 +43,12 @@ def selecionar_todas_listas_sngpc():
     pyautogui.hotkey(ALT, L)
 
 
-def selecionar_lista_sngopc():
+def selecionar_lista_sngpc():
     """Selecionar lista sngpc"""
     pyautogui.hotkey(ALT, S)
+    esperar_tempo(TEMPO_ESPERA)
+    pyautogui.press(SPACE)
+    pyautogui.press(ENTER)
 
 
 # VENDAS COM LOTES

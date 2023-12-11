@@ -27,3 +27,9 @@
 #     .vendas_por_cartao.test_base_rel_vendas_por_cartao_mono import *
 # from lib.testbase.relatorio.vendas.desempenho_de_vendas \
 #     .vendas_com_produtos_devolvidos.test_base_rel_vendas_com_produtos_devolvidos_mono import *
+# from lib.testbase.relatorio.vendas.desempenho_de_vendas \
+#     .listagem_vendas_produtos_controlados_e_lotes \
+#         .test_base_rel_listagem_vendas_produtos_controlados_e_lotes_mono_1 import *
+from lib.testbase.relatorio.vendas.desempenho_de_vendas \
+    .listagem_vendas_produtos_controlados_e_lotes \
+        .test_base_rel_listagem_vendas_produtos_controlados_e_lotes_mono_2 import *
